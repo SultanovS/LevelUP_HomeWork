@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+            @font-face {
+             font-family: MyFont; 
+             src: url(myriadpro-regular.ttf);
+            }
+    </style>        
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HR Form</title>
+</head>
+<body background="Background.jpg">
+    <header>
+        <table align="center">
+            <tr>
+                <td>
+                    <h1>Вакансия: Junior FrontEnd Developer</h1>
+                    <div>
+                        <div class="photo" style=" width:150; 
+                                                   height:100px; 
+                                                   float:left; 
+                                                   margin-right:15px;">
+                            <img src="photo.png" alt="photo" height="100" width="150s">
+                        </div>
+                        <div class="info"  style=" height:100px; 
+                                                   margin-left:50px; 
+                                                   text-align:left">
+                            <span>Имя: Сергей <br>
+                            <span><a href="https://github.com/SultanovS/LevelUP_HomeWork">Ссылка на репозиторий в GitHub</a> </span> <br>
+                            <span style="font-family: MyFont">Опыт работы: Нет
+                        </div>
+                    </div> <br>
+                    <div class="skills" style="text-align:left">
+                        <span>Дата Собеседования:
+                            <input type="date" name="interview_date" id=""> <br> <br>
+                        </span>
+                        <span>Уровень английского: </span> <br>
+                        <label> <input type="radio" name="group1" value="Bad"> Плохо </label>
+                        <label> <input type="radio" name="group1" value="middle"> Средне </label>
+                        <label> <input type="radio" name="group1" value="good"> Хорошо </label>
+                        <label> <input type="radio" name="group1" value="exelent"> Превосходно </label><br> <br> 
+                        Ключевые Навыки: <br> <br>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>...</li> <br>
+                        <input type="text" name="" id="" align="left" placeholder="Введите навык"> 
+                        <input type="button" value="Добавить в список"> <br>
+                        <br>
+                        Комуникабельность:
+                                <select name="" id="" align="left"> <br>
+                                    <option value="">Есть</option>
+                                    <option value="">Нету</option>
+                                    <option value="">Есть после 100 гр.</option>
+                                </select> <br> <br>
+                        Желаемая з/п: <input type="number" name="" id="" min="0"  placeholder="Не больше МРОТ"> тыс.руб. <br> <br>
+                    </div>
+                    <div class="summary">
+                        Подходит по критериям: <br> <br>
+                        <label><input type="checkbox" name="acceptance" id="">Знание ангийского </label>
+                        <label><input type="checkbox" name="acceptance" id="">Оклад </label>
+                        <label><input type="checkbox" name="acceptance" id="">Навыки </label>
+                        <label><input type="checkbox" name="acceptance" id="">Свой в доску </label>
+                        <br> <br>
+                    Образование, навыки и т.д.: <br>
+                    <table border="1">
+                        <tr>
+                            <td>#</td>
+                            <td>Сроки обучени</td>
+                            <td>Наименование учебного заведения, курсов</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>----</td>
+                            <td>====</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>----</td>
+                            <td>====</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>----</td>
+                            <td>====</td>
+                        </tr>
+                    </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+</body>
+</html>

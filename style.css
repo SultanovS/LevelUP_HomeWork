@@ -1,0 +1,12 @@
+
+body
+{
+        font-family: MyFont; 
+        src: url(myriadpro-regular.ttf); 
+} 
+li {
+    list-style-type: none; 
+   }
+   li:before {
+    content: "- "; 
+   }
