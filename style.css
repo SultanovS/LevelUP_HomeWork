@@ -1,12 +1,38 @@
 
-body
-{
-        font-family: MyFont; 
+body {  font-family: MyFont; 
         src: url(myriadpro-regular.ttf); 
-} 
-li {
-    list-style-type: none; 
+     } 
+
+li   { list-style-type: none; }
+
+li:before { content: "- ";  }
+
+table.greyGridTable {
+     border: 0px solid;
+     width: 100%;
+     text-align: center;
+     border-collapse: collapse;
    }
-   li:before {
-    content: "- "; 
+table.greyGridTable td, table.greyGridTable th {
+     border: 0px solid #BFBFBF;
+     padding: 3px 4px;
    }
+table.greyGridTable tbody td {
+     font-size: 12px;
+     font-weight: bold;
+     color: #303030;
+   }
+table.greyGridTable thead {
+             border-bottom: 2px solid #808080;
+   }
+table.greyGridTable thead th {
+     font-size: 15px;
+     font-weight: bold;
+     color: #333333;
+     text-align: center;
+     border-left: 1px solid #333333;
+   }
+table.greyGridTable thead th:first-child {
+     border-left: none;
+   }
+      
