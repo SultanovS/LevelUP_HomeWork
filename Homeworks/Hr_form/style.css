@@ -14,6 +14,14 @@ li:before {
   content: "- ";  
 }
 
+li:nth-child(2n) {
+  color: #00ccb8;
+  font-weight: bold;
+}
+li:nth-child(2n+1) {
+  
+}
+
 a:visited {
   color: rgb(110, 110, 218);
 }
