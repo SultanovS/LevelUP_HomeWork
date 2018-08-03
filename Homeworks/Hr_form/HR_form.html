@@ -13,28 +13,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HR Form</title>
 </head>
-<body background="Background.jpg">
+<body >
     <header>
-        <table align="center">
+        <table align="center" style="width: 100%">
             <tr>
-                <td>
+                <td class="beauty"><div class="buttom"></div></td>
+                <td rowspan="3">
                     <h1>Вакансия: Junior FrontEnd Developer</h1>
                     <div>
-                        <div class="photo" style=" width:150; 
-                                                   height:100px; 
-                                                   float:left; 
-                                                   margin-right:15px;">
+                        <div class="photo">
                             <img src="photo.png" alt="photo" height="100" width="150s">
                         </div>
-                        <div class="info"  style=" height:100px; 
-                                                   margin-left:50px; 
-                                                   text-align:left">
+                        <div class="info">
+                        <div class="info">
                             <span>Имя: Сергей <br> </span>
                             <a href="https://github.com/SultanovS/LevelUP_HomeWork" target="_blank">Ссылка на репозиторий в GitHub</a> <br>
                             <span>Опыт работы: Нет </span>
                         </div>
                     </div> <br>
-                    <div class="skills" style="text-align:left">
+                    <div class="skills">
                         <span>Дата Собеседования: </span>
                             <input type="date" name="interview_date" > <br> <br>
                         <span>Уровень английского: </span> <br>
@@ -46,8 +43,8 @@
                         <ul> Ключевые навыки: <br> <br>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>...</li> <br>
+                            <li>Java Script</li>
+                            <li>WebGL</li> <br>
                         </ul>
                         <input type="text"  align="left" placeholder="Введите навык"> 
                         <input class="button" type="button" value="Добавить в список" > <br>
@@ -58,7 +55,7 @@
                                     <option value="">Нету</option>
                                     <option value="">Есть после 100 гр.</option>
                                 </select> <br> <br>
-                        Желаемая з/п: <input type="number"  min="0"  placeholder="Не больше МРОТ"> тыс.руб. <br> <br>
+                        Желаемая з/п: <input id="salary" type="number"  min="0"  placeholder="Не больше МРОТ"> тыс.руб. <br> <br>
                     </div>
                     <div class="summary">
                         Подходит по критериям: <br> <br>
@@ -98,7 +95,14 @@
                     </div>
                 </td>
             </tr>
+            <tr>
+                <td class="beauty"><div class="buttom"></div></td>
+            </tr>
+            <tr>
+                <td class="beauty"><div class="buttom"></div></td>
+            </tr>
         </table>
+        
     </header>
 </body>
 </html>
