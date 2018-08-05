@@ -1,0 +1,152 @@
+
+@font-face {
+    font-family: MyFont;
+    src: url(myriadpro-regular.ttf);
+    /* font-family: MyFont; 
+    src: url(myriadpro-regular.ttf); */
+}
+
+body {  
+    font-family: MyFont;
+    background: linear-gradient(to right, #b3b3b3, rgb(241, 241, 241),#b3b3b3);
+} 
+
+div {
+    /* border: 1px solid gray; */
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.parent {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+.header {
+    height: 70px;
+    background: linear-gradient(to top, #C8845F, #E7C6B6 );
+}
+
+.topic_creator {
+    display: flex;
+    width: 95%;
+}
+
+.topic_name {
+    font-size: 1.3em;
+}
+.creator {
+    color: green;
+}
+
+.crest {
+    display: flex;
+    align-items: center;
+    margin: 0 9px 0 0;
+    flex-grow: 1;
+}
+.close:hover {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.body {
+    height: 530px;
+    overflow-y: scroll;
+    background: linear-gradient(to top, rgb(136, 90, 65), rgb(211, 175, 155) );
+}
+
+.header, .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    box-shadow: 4px 4px 5px gray;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.common_info  {
+    width: 25%;
+    height: auto;
+}
+
+.people_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-items: center;
+    background: #f0c6ae;
+}
+
+.people_info, .message {
+    height: 85px;
+    justify-content: space-between;
+    box-shadow: 4px 4px 6px rgb(48, 48, 48);
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.message {
+    background: rgb(228, 215, 209) ;
+}
+
+.icon {
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+}
+.TS {
+    border: 2px solid rgb(80, 80, 80);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(146, 170, 146), green );
+}
+.AU {
+    border: 2px solid rgb(80, 80, 80);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient( rgb(165, 133, 160), rgb(163, 2, 136) );
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message_field {
+    width: 75%;
+}
+
+.name {
+    font-size: 0.7em;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 7px 0 4px 7px;
+}
+
+.blabla {
+    margin: 3px 3px 4px 7px;
+}
+
+.parent, .topic_creator, .common_info, .message_field, .message {
+    flex-direction: column;
+    align-content: space-between;
+}
