@@ -4,6 +4,26 @@ body {  font-family: MyFont;
         background: linear-gradient(to right, #b3b3b3, rgb(241, 241, 241),#b3b3b3);
 } 
 
+.h1 {
+  font-size: 2em;
+  color: rgb(75, 75, 75);
+}
+
+
+.multicolor { 
+  background: linear-gradient(to right, red, orange, gray,green, blue,purple );  /* подробнее про градиенты */ 
+  -webkit-background-clip: text;  /* подробнее про background-clip */ 
+  color: transparent;
+  font-size: 2em;
+  display: inline-block;
+}
+
+span {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: rgb(75, 75, 75);
+}
+
 li   { 
         list-style-type: none;
         line-height: 1.5em;
@@ -36,21 +56,60 @@ a:hover {
   height:100px;
   float:left;
   margin-right:15px;
+  box-shadow: 7px 7px 7px gray;
 }
 
 .photo:hover {
-  -webkit-filter: drop-shadow(10px 10px gray);
+  -webkit-filter: drop-shadow(7px 7px 5px gray);
   transform: rotate(5deg)  ;
-  -webkit-animation: rotate 6s linear infinite;
+}
+input, input::selection, input:active, input:hover {
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  outline-offset: 0;
+  padding: 3px 3px 3px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   
 }
 
+input[type=text], input[type=date], input[type=number], select {
+  box-shadow: inset 2px 2px 2px 0.5px gray;
+}
+
+select {
+  border-radius: 5px;
+  padding: 3px 3px 3px 10px;
+  border: 0;
+  outline: 0;
+  outline-offset: 0;
+}
+
+button {
+  background: linear-gradient(to right, rgb(150, 149, 149),rgb(187, 187, 187) );
+  color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 5px gray;
+  padding: 3px;
+  border: 0;
+  outline: 0;
+  outline-offset: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 2px 2px 3px gray;
+}
+
+label {
+  cursor: pointer;
+}
+
 .info {
-  
   height:100px; 
   margin-left:0px; 
   text-align:left;
-  
 }
 
 .skils {
@@ -59,10 +118,9 @@ a:hover {
   text-align:left"
 }
 
-
   .buttom {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   margin: auto; 
   background: radial-gradient(farthest-side ellipse at top left, white, #aaaaaa);
@@ -79,32 +137,38 @@ a:hover {
     width: 33%;
   }
 
-table.greyGridTable {
+  table.greyGridTable {
      border: 0px solid;
      width: 50%;
      text-align: center;
      border-collapse: collapse;
    }
-table.greyGridTable td, table.greyGridTable th {
-     border: 0px solid #BFBFBF;
-     padding: 3px 4px;
+
+   tr.grey:hover {
+    color:#00ccb8;
    }
-table.greyGridTable tbody td {
-     font-size: 12px;
-     font-weight: bold;
-     color: #303030;
-   }
-table.greyGridTable thead {
-             border-bottom: 2px solid #808080;
-   }
-table.greyGridTable thead th {
-     font-size: 15px;
-     font-weight: bold;
-     color: #333333;
-     text-align: center;
-     border-left: 1px solid #333333;
-   }
-table.greyGridTable thead th:first-child {
-     border-left: none;
-   }
+
+  table.greyGridTable td, table.greyGridTable th {
+      border: 0px solid #BFBFBF;
+      padding: 3px 4px;
+    }
+  table.greyGridTable tbody td {
+      font-size: 12px;
+      font-weight: bold;
+      
+    }
+  table.greyGridTable thead {
+              border-bottom: 2px solid #808080;
+    }
+  table.greyGridTable thead th {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+      border-left: 1px solid #333333;
+    }
+  table.greyGridTable thead th:first-child {
+      border-left: none;
+    }
+
       

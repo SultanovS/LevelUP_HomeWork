@@ -13,23 +13,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HR Form</title>
 </head>
-<body >
-    <header>
-        <table align="center" style="width: 100%">
+    
+        <table align="center" style="width: 100%; ">
             <tr>
                 <td class="beauty"><div class="buttom"></div></td>
                 <td rowspan="3">
-                    <h1>Вакансия: Junior FrontEnd Developer</h1>
+                    <span class="h1"> Вакансия: </span></h1> <div class="multicolor"> Junior FrontEnd Developer </div>
                     <div>
                         <div class="photo">
-                            <img src="photo.png" alt="photo" height="100" width="150s">
+                            <img src="photo.png" alt="photo" height="100" width="150">
                         </div>
                         <div class="info">
-                        <div class="info">
-                            <span>Имя: Сергей <br> </span>
+                            <span>Имя: </span> Сергей<br>
                             <a href="https://github.com/SultanovS/LevelUP_HomeWork" target="_blank">Ссылка на репозиторий в GitHub</a> <br>
-                            <span>Опыт работы: Нет </span>
-                        </div>
+                            <span>Опыт работы:  </span> Нет
                     </div> <br>
                     <div class="skills">
                         <span>Дата Собеседования: </span>
@@ -40,32 +37,33 @@
                         <label> <input type="radio" name="group1" value="good"> Хорошо </label>
                         <label> <input type="radio" name="group1" value="exelent"> Превосходно </label><br> <br> 
                         <!-- <span> Ключевые Навыки: </span>  -->
-                        <ul> Ключевые навыки: <br> <br>
+                        <span>Ключевые навыки: </span>
+                        <ul> 
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Java Script</li>
                             <li>WebGL</li> <br>
                         </ul>
                         <input type="text"  align="left" placeholder="Введите навык"> 
-                        <input class="button" type="button" value="Добавить в список" > <br>
+                        <button class="button">Добавить в список</button>
                         <br>
-                        Комуникабельность:
+                        <span>Комуникабельность: </span>   
                                 <select  align="left"> <br>
                                     <option value="">Есть</option>
                                     <option value="">Нету</option>
                                     <option value="">Есть после 100 гр.</option>
                                 </select> <br> <br>
-                        Желаемая з/п: <input id="salary" type="number"  min="0"  placeholder="Не больше МРОТ"> тыс.руб. <br> <br>
+                        <span>Желаемая з/п:</span> <input id="salary" type="number"  min="0"  placeholder="Не больше МРОТ"> тыс.руб. <br> <br>
                     </div>
                     <div class="summary">
-                        Подходит по критериям: <br> <br>
+                        <span>Подходит по критериям:</span> <br> <br>
                         <label><input type="checkbox" name="acceptance" >Знание ангийского </label>
                         <label><input type="checkbox" name="acceptance" >Оклад </label>
                         <label><input type="checkbox" name="acceptance" >Навыки </label>
                         <label><input type="checkbox" name="acceptance" >Свой в доску </label>
                         <br> <br>
-                    Образование, навыки и т.д.: <br> <br>
-                    
+                    <span>Образование, навыки и т.д.:</span> <br> <br>
+                    </div>
                     <table class="greyGridTable">
                         <thead>
                             <tr>
@@ -74,25 +72,25 @@
                             <th>Нименование учебного заведения, курсов</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody >
+                            <tr class="grey">
                             <td>1</td>
                             <td>----------</td>
                             <td>=======</td>
                             </tr>
-                            <tr>
+                            <tr class="grey">
                             <td>2</td>
                             <td>----------</td>
                             <td>=======</td>
                             </tr>
-                            <tr>
+                            <tr class="grey">
                             <td>3</td>
                             <td>----------</td>
                             <td>=======</td>
                             </tr>
                         </tbody>
                         </table>
-                    </div>
+                    
                 </td>
             </tr>
             <tr>
@@ -103,6 +101,5 @@
             </tr>
         </table>
         
-    </header>
 </body>
 </html>
