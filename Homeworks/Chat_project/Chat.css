@@ -2,8 +2,6 @@
 @font-face {
     font-family: MyFont;
     src: url(myriadpro-regular.ttf);
-    /* font-family: MyFont; 
-    src: url(myriadpro-regular.ttf); */
 }
 
 body {  
@@ -12,7 +10,6 @@ body {
 } 
 
 div {
-    /* border: 1px solid gray; */
     margin: 3px;
     border-radius: 4px;
 }
@@ -22,11 +19,6 @@ div {
     width: 800px;
     height: 600px;
     margin: auto;
-}
-
-.header {
-    height: 70px;
-    background: linear-gradient(to top, #C8845F, #E7C6B6 );
 }
 
 .topic_creator {
@@ -46,9 +38,10 @@ div {
     align-items: center;
     margin: 0 9px 0 0;
     flex-grow: 1;
+    font-weight: bold;
 }
 .close:hover {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
     cursor: pointer;
 }
@@ -57,13 +50,15 @@ div {
     height: 530px;
     overflow-y: scroll;
     background: linear-gradient(to top, rgb(136, 90, 65), rgb(211, 175, 155) );
+    box-shadow: 4px 4px 5px gray;
 }
 
-.header, .body {
+.header {
+    height: 70px;
+    background: linear-gradient(to top, #C8845F, #E7C6B6 );
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     box-shadow: 4px 4px 5px gray;
     border: 1px solid rgb(224, 224, 224);
 }
@@ -72,12 +67,9 @@ div {
     display: none; 
 }
 
-.common_info  {
+.people_info {
     width: 25%;
     height: auto;
-}
-
-.people_info {
     display: flex;
     flex-direction: row;
     flex-wrap: none;
@@ -86,7 +78,7 @@ div {
 }
 
 .people_info, .message {
-    height: 85px;
+    height: auto;
     justify-content: space-between;
     box-shadow: 4px 4px 6px rgb(48, 48, 48);
     border: 1px solid rgb(224, 224, 224);
@@ -94,13 +86,14 @@ div {
 
 .message {
     background: rgb(228, 215, 209) ;
+    width: 75%;
 }
 
 .icon {
-    color: rgb(221, 221, 221);
+    color: rgb(243, 243, 243);
     font-weight: bold;
 }
-.TS {
+.ЭП, .ЭХ, .ГМ, .ВГ, .ДЛ, .ЯГ, .ОА, .ЭМ  {
     border: 2px solid rgb(80, 80, 80);
     display: flex;
     width: 40px;
@@ -110,29 +103,30 @@ div {
     margin-right: 5px;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(rgb(146, 170, 146), green );
+    
 }
-.AU {
-    border: 2px solid rgb(80, 80, 80);
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 10%;
-    margin-right: 5px;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient( rgb(165, 133, 160), rgb(163, 2, 136) );
-}
+.ЭХ {background: radial-gradient(rgb(165, 133, 160), rgb(163, 2, 136) );}
+.ЭП {background: radial-gradient(rgb(146, 170, 146), green            );}
+.ГМ {background: radial-gradient(rgb(131, 123, 165), rgb(25, 0, 134)  );}
+.ВГ {background: radial-gradient(rgb(172, 119, 119), rgb(134, 0, 0)   );}
+.ДЛ {background: radial-gradient(rgb(128, 180, 180), rgb(0, 134, 134) );}
+.ЯГ {background: radial-gradient(rgb(184, 146, 122), rgb(134, 54, 0)  );}
+.ОА {background: radial-gradient(rgb(189, 188, 125), rgb(155, 152, 0) );}
+.ЭМ {background: radial-gradient(rgb(167, 150, 189), rgb(67, 0, 155)  );}
+
+.name.ЭХn {color: rgb(163, 2, 136) ;}
+.name.ЭПn {color: green            ;}
+.name.ГМn {color: rgb(25, 0, 134)  ;}
+.name.ВГn {color: rgb(134, 0, 0)   ;}
+.name.ДЛn {color: rgb(0, 134, 134) ;}
+.name.ЯГn {color: rgb(134, 54, 0)  ;}
+.name.ОАn {color: rgb(155, 152, 0) ;}
+.name.ЭМn {color: rgb(67, 0, 155)  ;}
 
 .date {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.message_field {
-    width: 75%;
 }
 
 .name {
@@ -146,7 +140,16 @@ div {
     margin: 3px 3px 4px 7px;
 }
 
-.parent, .topic_creator, .common_info, .message_field, .message {
+.message_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
+}
+
+.parent, .topic_creator, .message, .body{
     flex-direction: column;
     align-content: space-between;
 }
+
