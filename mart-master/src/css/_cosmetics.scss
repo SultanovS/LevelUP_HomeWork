@@ -1,0 +1,75 @@
+header {
+    background-color: $primary-color;
+
+    .small-text {
+        color: white;
+    }
+}
+.advantages {
+    .advantage {
+        &:hover {
+            .advantage-icon, .advantage-title {
+                color: $primary-color;
+            }
+        }
+        .advantage-icon {
+            font-size: 60px;
+        }
+        .advantage-title {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        .advantage-text {
+            line-height: 22px;
+        }
+    }
+}
+.stripe {
+    background-color: $primary-color;
+}
+.new-collection {
+    background-color: aliceblue;
+}
+.product-item {
+    .product-image-actions {
+        opacity: 0;
+        transition: opacity 400ms;
+    }
+    .product-button {
+        background-color: transparent;
+        border: 1px solid white;
+    
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
+    &:hover {
+        .product-image-actions {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .product-name  {
+            background-color: $primary-color;
+        }
+        .product-price {
+            background-color: lighten($primary-color, 15%)
+        }
+    }
+
+    .product-title-and-price {
+        color: white;
+        text-transform: uppercase;
+        align-items: center;
+        font-weight: bold
+    }
+    .product-name {
+        background-color: $third-color;
+    }
+    .product-price {
+        background-color: $fourth-color;
+    }
+}
+    .fa-clock-o::before {
+        content: "\f017";
+    }
