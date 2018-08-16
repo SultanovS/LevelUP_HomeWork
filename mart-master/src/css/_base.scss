@@ -7,13 +7,17 @@
     font-family: 'Open Sans Bold', sans-serif;
 }
 
+// div {
+//     border: 1px solid;
+// }
+
 h2 {
     @extend .bold;
     color: $secondary-color-light;
     text-transform: uppercase;
     font-size: 42px;
     letter-spacing: -2px;
-    margin: 0;
+    
 }
 
 .flex-container {
@@ -39,4 +43,84 @@ h2 {
 
 header {
     height: 45px;
+}
+
+.products {
+    @extend .flex-container;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+
+
+    .product-item {
+        width: 236px;
+    }
+
+    .product-image-with-hover {
+        position: relative;
+        height: 262px;
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            background-color: lighten(grey, 50%);
+        }
+
+        .product-image-actions {
+            @extend .flex-container;
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        .product-button {
+            @extend .flex-container;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin: 2px;
+
+            &.wide {
+                width: 156px;
+                color: white;
+            }
+            
+            .add-to-cart {
+                margin-left: 15px;
+        }
+
+        }
+    }
+
+    .product-title-and-price {
+        @extend .flex-container;
+        height: 36px;
+        
+        .product-name {
+            @extend .flex-container;
+            align-items: center;
+            width: 186px;
+            height: 36px;
+
+            span {
+                padding-left: 12px;
+            }
+            
+        }
+        .product-price {
+            @extend .flex-container;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 36px;
+
+            
+        }
+    }
 }
