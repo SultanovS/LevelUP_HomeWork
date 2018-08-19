@@ -29,20 +29,45 @@
             </div>
         </header>
         <section class="navigation">
-            <img src="" alt="mart">
-            <nav>
-                <a href="" class="common-text bold">Home</a>
-                <a href="" class="common-text bold">About us</a>
-                <a href="" class="common-text bold">Page</a>
-                <a href="" class="common-text bold">Shop</a>
-                <a href="" class="common-text bold">Blog</a>
-                <a href="" class="common-text bold">Contact us</a>
-            </nav>
-            <div class="search-cart">
+            <div class="navigation-content"> <!-- <img src="" alt="mart"> -->
+                <div class="mart"><span>m</span>art</div>
+                <nav>
+                    <a href="" class="common-text bold">Home</a>
+                    <a href="" class="common-text bold">About us</a>
+                    <a href="" class="common-text bold">Page</a>
+                    <a href="" class="common-text bold">Shop</a>
+                    <a href="" class="common-text bold">Blog</a>
+                    <a href="" class="common-text bold">Contact us</a>
+                </nav>
+                <div class="search-cart">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <span class="search-cart-text">Cart - $</span>
+                        <span class="search-cart-total-amount">0</span>
+                        <div class="search-cart-goods-count">
+                            <i class="fa fa-square-o" aria-hidden="true"></i>
+                            <span class="count">0</span>
+                        </div>
 
+                </div>
             </div>
         </section>
-        <section class="carousel"></section>
+        <section class="carousel" id="carousel-with-margin">
+                <button class="carousel-button carousel-button-left"><i class="fas fa-chevron-left"></i></button>
+                <div class="frame flex-container">
+                    <div class="carousel-image first"  ></div>
+                    <div class="carousel-image second" ></div>
+                    <div class="carousel-image third"  ></div>
+                    <div class="carousel-image fourth" ></div>
+                    <div class="carousel-image fifth"  ></div>
+                    <div class="carousel-image sixth"  ></div>
+                    <div class="carousel-image seventh"></div>
+                </div>
+                <div class="carousel-text">
+                    <span> dresses &amp; jeans <br> from our famous brands sale </span>
+                    <button>by now</button>
+                </div>
+                <button class="carousel-button carousel-button-right"><i class="fas fa-chevron-right"></i></button>
+        </section>
         <section class="advantages">
             <div class="container">
                 <div class="advantage">
@@ -75,7 +100,7 @@
             </div>
         </section>
         <section class="new-collection">
-            <div class="container column-container">
+            <div class="new-collection-header">
                 <h2>
                     New collection
                 </h2>
@@ -84,6 +109,7 @@
                     <div class="stripe"></div>
                     <div class="stripe thin-stripe"></div>
                 </div>
+            </div>
                 <div class="products">
                     <div class="product-item">                        
                         <div class="product-image-with-hover">
@@ -154,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
         <section class="featured">
             <div class="featured-header">
@@ -168,27 +194,23 @@
                 </div>
                 <div class="choose">
                     <div class="choose-button">
-                        <div class="counter"></div>
+                        <div class="counter">
+                            <div class="digit">8</div>
+                        </div>
                         <div class="button">all</div>
                     </div>
                     <div class="choose-button">
-                        <div class="counter"></div>
                         <div class="button">dressess an suits</div>
                     </div>
                     <div class="choose-button">
-                        <div class="counter"></div>
                         <div class="button">accessories</div>
                     </div>
                     <div class="choose-button">
-                        <div class="counter"></div>
                         <div class="button">miscellaneuos</div>
                     </div>
-                    
-                    
                 </div>
             </div>    
 
-            <!-- <div class="container column-container"> -->
             <div class="featured-products">
                     <div class="product-item">                        
                         <div class="product-image-with-hover">
@@ -326,10 +348,13 @@
                             <div class="product-price product-item">  <span class="">$26</span> </div>
                         </div>
                     </div>
-                <!-- </div> -->
 
         </section>
         <section class="End-season">
+            <div class="End-season-text">
+                <span class="first-text">end of season sale</span> <br>
+                <span class="second-text">Up to 35% off Women's Denim</span> 
+            </div>
 
 
         </section>
@@ -437,8 +462,8 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis animi aliquid quaerat temporibus quam pariatur harum tempore atque magnam.
                     </div>
                     <div class="customer-name">
-                        <span> - Olivia - </span> <br>
-                        <span> Melbour, Aus </span>
+                        <span class="customer-name-name"> - Olivia - </span> <br>
+                        <span class="customer-name-city"> Melbour, Aus </span>
                     </div>
                     <div class="photo-collection">
                         <div class="customer-photo"></div>
@@ -467,7 +492,7 @@
                             Follow a collections of new &amp; promotions
                         </div>
                         <div class="mail-and-button">
-                        <input type="email" class="Newsletter-mail">
+                        <input type="text" placeholder="Enter your mail here" class="Newsletter-mail">
                         <button class="button-of-mail">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -552,29 +577,29 @@
 
                 <div class="Get-in-touch-container">
                     <div class="Get-in-touch-left">
-                    <span class="dokan">DOKAN</span>                     <br>
-                    <span class="header">We'd love to meet</span>                     <br>
-                    <span class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos minima nulla eos ad sunt maxime. Facere quia veritatis modi?</span>                     <br>
-                    <span>Mail office</span><span>adress</span>
-                    <span>Phone</span><span>1.555.555.555</span>
-                    <span>Email</span><span>info@tourdomain.com</span>
-                    
-                    <div class="icon-container">
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                        <div class="icon"></div>
-                    </div>
+                        <div class="dokan">Do<span class="dokan-green">k</span>an</div> <br>
+                        <div class="meet-you">We'd love To Meet You In Person Or Via The Web!</div> <br>
+                        <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos minima nulla eos ad sunt maxime. Facere quia veritatis modi? Facere quia veritatis modi? Facere quia veritatis modi? veritatis modi?</div> <br>
+                        <div class="ofice-phone-mail"><span class="green"> Mail office</span> <span>: 123 Elm St. New York City, NY </span></div>
+                        <div class="ofice-phone-mail"><span class="green"> Phone</span> <span>: 1.555.555.555</span></div>
+                        <div class="ofice-phone-mail"><span class="green"> Email</span> <span>: info@tourdomain.com</span></div>
+                        
+                        <div class="icon-container">
+                            <button class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                            <button class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                            <button class="icon"><i class="fa fa-dribbble" aria-hidden="true"></i></button>
+                            <button class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                            <button class="icon"><i class="fa fa-codepen" aria-hidden="true"></i></button>
+                            <button class="icon"><i class="fa fa-github" aria-hidden="true"></i></button>
+                        </div>
                     </div>
                     <div class="Get-in-touch-rigt">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button></button>
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Email">
+                        <input type="text" placeholder="Subject">
+                        <input type="text" placeholder="Website URL ">
+                        <textarea class="Get-in-touch-text" placeholder="Your Message..." cols="30" rows="10"></textarea>
+                        <button>send</button>
                     </div>
                 </div>
             </section>

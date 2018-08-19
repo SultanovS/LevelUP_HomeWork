@@ -26,12 +26,122 @@ header {
 }
 
 .navigation {
+    display: flex;
+    align-items: center;
     height: 83px;
 
+    .navigation-content {
+        display: flex;
+        justify-content: space-between;
+        width: 1034px;
+        margin: 0 auto;
+        align-items: center;
+    
+
+        .mart {
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            span {
+                color: $primary-color;
+            }
+        }
+        nav {
+            display: flex;
+            width: 434px;
+            justify-content: space-between;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            margin-left: 53px;
+            a {
+                color: $third-color;
+            }
+            a:hover {
+                color: $primary-color;
+            }
+        }
+
+        .search-cart {
+            display: flex;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            width: 127px;
+            
+            i:first-child {
+            padding-right: 7px;
+        }
+        }
+        .search-cart-goods-count {
+            position: relative;
+            border: 1px solid;
+            margin-left: 7px;
+            width: 19px;
+            i {
+                padding-right: 7px;
+                height: 18px;
+                position: absolute;
+            }
+            span {
+                position: absolute;
+                color: $primary-color;
+                margin-left: 4px;
+                font-size: 13px;
+            }
+
+            .count {
+                position: absolute;
+            }
+        }
+}
 }
 
-.carousel {
+#carousel-with-margin {
     height: 554px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .carousel-button {
+        width: 100px;
+        height: 50;
+    }
+    .frame {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .carousel-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+
+        }
+        .first   { background-color: red;     }
+        .second  { background-color: orange;  }
+        .third   { background-color: yellow;  }
+        .fourth  { background-color: green;   }
+        .fifth   { background-color: skyblue; }
+        .sixth   { background-color: blue;    }
+        .seventh { background-color: purple; }
+    }
+    .carousel-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+            background-color: transparent;
+            width: 100px;
+            height: 50px;
+            color: white;
+        }
+
+    }
+
+    
 }
 
 .advantages {
@@ -52,7 +162,7 @@ header {
 }
 .green-stripes {
     width: 152px;
-    margin: 16px 0 72px 0;
+    margin: 16px 0 0 0;
 
     .stripe {
         width: 100%;
@@ -66,11 +176,22 @@ header {
     }
 }
 .new-collection {    
-    @extend .products;
-    height: 622px;
-    padding: 84px 0;
-
     
+    height: 622px;
+    .new-collection-header {
+        @extend .flex-container;
+        @extend .column-container;
+        justify-content: space-between;
+        width: 100%;
+        padding: 49px 0 71px 0;
+        h2 {
+            color: #434b53;
+            text-transform: uppercase;
+            font-size: 42px;
+            letter-spacing: -2px;
+            margin: 35px 0 0 0;
+        }
+    }
 }
 
 .featured-green-stripes {
@@ -90,16 +211,16 @@ header {
 }
 
 .featured {
-    height: 1080px;;
+    height: 1080px;
     padding: 0;
-    border: 1px solid;
+    padding-top: 53px;
 
     .featured-header {
         @extend .flex-container;
         @extend .column-container;
         width: 100%;
         height: 218px;
-        margin: 53px 0 97px 0;
+        margin-bottom: 84px;
 
         h2 {
             margin: 35px 0 18px 0;
@@ -108,17 +229,19 @@ header {
 
     .choose {
         @extend .flex-container;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
+        width: 530px;
         height: 60px;
+        margin: 0 auto;
+        padding-left: 34px;
         .choose-button {
             @extend .flex-container;
             @extend .column-container;
             justify-content: flex-end;
             height: 60px;
-            margin: 0 10px 0 10px;
 
             .counter {
+                position: relative;
                 width: 36px;
                 height: 36px;
                 border: 1px solid #333333;
@@ -127,6 +250,15 @@ header {
                 flex-shrink: 0;
                 align-self: flex-end;
                 transform: translateX(8px);
+                .digit {
+                    position: absolute;
+                    color: $primary-color;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-weight: bold;
+                    font-size: 18px;
+                }
             }
 
             .button {
@@ -151,16 +283,14 @@ header {
     }
     .featured-products {
         @extend .flex-container;
-        height: 640px;
+        height: 645px;
         margin: 0 auto;
-        align-items: baseline;
         justify-content: space-between;
         width: 1030px;
-        padding: 0;
         flex-wrap: wrap;
 
         &:first-child {
-            margin-bottom: 27px;
+            // margin-bottom: 27px;
         }
         .product-item {
             width: 236px;
@@ -241,6 +371,7 @@ header {
     .Best-sellers-header {
         @extend .flex-container;
         @extend .column-container;
+        margin-bottom: 15px;
 
         h2 {
             margin: 85px 0 1px 0;
@@ -262,8 +393,28 @@ header {
 }
 
 .End-season {
-    background-color: #1abc9c;
+    @extend .flex-container;
+    align-items: center;
     height: 370px;
+    color: white;
+    
+    .End-season-text {
+        margin: 0 auto;
+        width: 595px;
+        height: 139px;
+        text-align: center;
+        padding-top: 28px;
+        .first-text {
+            font-weight: bold;
+            font-size: 55px;
+            text-transform: uppercase;
+            line-height: 63px;
+        }
+        .second-text {
+            font-size: 31px;
+            line-height: 49px;
+        }
+    }
 
 }
 
@@ -302,7 +453,7 @@ header {
         @extend .flex-container;
         @extend .column-container;
         justify-content: flex-start;
-        margin-top: 76px;
+        margin-top: 77px;
         height: 452px;
 
         .main-photo {
@@ -315,11 +466,20 @@ header {
         .customer-description {
             height: 90px;
             width: 770px;
-            margin-top: 27px;
+            margin-top: 22px;
             line-height: 23px;
             font-size: 13px;
         }
+        .customer-name {
+            text-align: center;
 
+            .customer-name-name {
+                color: $primary-color;
+            }
+            .customer-name-city {
+                font-size: 13px;
+            }
+        }
         .photo-collection {
             @extend .flex-container;
             justify-content: space-between;
@@ -379,13 +539,15 @@ header {
             
         }
 
+    }
         .Newsletter-text {
         color: white;
         margin-top: 2px;
         font-size: 14.5px;
-        letter-spacing: -1px;
+        width: 271px;
+        letter-spacing: -0.4px;
+        text-align: start;
         }
-    }
     .mail-and-button {
         height: 56px;
         @extend .flex-container;
@@ -404,16 +566,20 @@ header {
             padding: 25px;
             border: 0;
             background-color: white;
+            
         }
 
         .button-of-mail {
             color: white;
             position: relative;
-            height: 52px;
+            height: 56px;
             border: 3px solid white;
-            border-radius: 0 4px 4px 0;
+            border-radius: 0 6px 6px 0;
             width: 150px;
             background-color: $primary-color;
+            outline: 0;
+            outline-offset: 0;
+
         }
     }
 }
@@ -518,6 +684,7 @@ header {
             text-align: center;
             width: 326px;
             height: 463px;
+            color: $third-color;
             }
             .Latest-news-pic {
                 width: 323px;
@@ -562,23 +729,24 @@ header {
 
 .Get-in-touch {
     height: 664px;
+    background-color: $third-color;
 
     .Get-in-touch-header {
         @extend .flex-container;
         @extend .column-container;
         text-align: center;
         width: 100%;
-        margin-bottom: 98px;
+        margin-bottom: 60px;
         
         h2 {
             margin: 84px 11px 0 0;
             letter-spacing: -1.1;
+            color: white;
         }
         
-        .Get-in-touch-stripes {
+        .Get-in-touch-green-stripes {
             width: 152px;
-            margin: 0 0 24px 0;
-            
+            margin: 18px 0 6px 0;
 
             .stripe {
             width: 100%;
@@ -593,5 +761,113 @@ header {
             }
             
         }
+    }
+    .Get-in-touch-container {
+    @extend .flex-container;
+    margin: 0 auto;
+    width: 1034px;
+    height: 344px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    .Get-in-touch-left {
+        @extend .flex-container;
+        @extend .column-container;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 510px;
+        height: 344px;
+        color: white;
+
+        .dokan {
+            font-size: 58px;
+            .dokan-green {
+                color: $primary-color;
+            }
+        }
+        .meet-you {
+            letter-spacing: -0.4px;
+        }
+        .text {
+            font-size: 13px;
+            height: 60px;
+            line-height: 22px;
+            margin: -7px 0 17px 0;
+        }
+        .ofice-phone-mail {
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            .green {
+                color: $primary-color;
+            }
+        }
+        .icon-container {
+            @extend .flex-container;
+            justify-content: space-between;
+            height: 29px;
+            width: 215px;
+            margin-top: 3px;
+            .icon {
+                position: relative;
+                width: 29px;
+                height: 29px;
+                border: 1px solid;
+                text-align: center;
+                i {
+                    position: absolute;
+                }
+            }
+        }
+    }
+    .Get-in-touch-rigt {
+        width: 510px;
+        height: 344px;
+        padding: 7px 5px 5px 5px;
+
+        input[type=text] {
+            width: 235px;
+            height: 47px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 2px;
+            padding-left: 17px;
+            &::-webkit-input-placeholder { 
+                color: white;
+            }
+            &:nth-child(odd) {
+            margin: 0 24px 27px 0;
+            
+            }
+        }
+        .Get-in-touch-text {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            height: 111px;
+            width: 499px;
+            border-radius: 3px;
+            background-color: transparent;
+            padding: 12px 16px;
+            resize: none;
+            &::-webkit-input-placeholder { 
+                color: white;
+            }
+        }
+        button {
+            width: 140px;
+            height: 46px;
+            border: none;
+            outline: none;
+            outline-offset: unset;
+            margin-top: 28px;
+            background-color: $primary-color;
+            text-transform: uppercase;
+            color: white;
+        }
+        
+        
+    }
     }
 }

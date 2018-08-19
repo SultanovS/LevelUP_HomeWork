@@ -11,11 +11,11 @@ h2 {
   font-size: 42px;
   letter-spacing: -2px; }
 
-.flex-container, .container, .products, .new-collection, .products .product-image-with-hover .product-image-actions, .new-collection .product-image-with-hover .product-image-actions, .products .product-image-with-hover .product-button, .new-collection .product-image-with-hover .product-button, .products .product-title-and-price, .new-collection .product-title-and-price, .products .product-title-and-price .product-name, .new-collection .product-title-and-price .product-name, .products .product-title-and-price .product-price, .new-collection .product-title-and-price .product-price, header, header .container, .featured .featured-header, .featured .choose, .featured .choose .choose-button, .featured .featured-products, .featured .featured-products .product-image-with-hover .product-image-actions, .featured .featured-products .product-image-with-hover .product-button, .featured .featured-products .product-title-and-price, .featured .featured-products .product-title-and-price .product-name, .featured .featured-products .product-title-and-price .product-price, .Best-sellers .Best-sellers-header, .Customer-review-header, .Customer-review .Customer-review-photo-text, .Customer-review .Customer-review-photo-text .photo-collection, .Newsletter, .Newsletter .Newsletter-header, .Newsletter .mail-and-button, .Our-partner .Our-partner-header, .Our-partner .Our-partner-logo-container, .Latest-news .Latest-news-header, .Latest-news .Latest-news-logo-main-container, .Latest-news .Latest-news-logo-main-container .Latest-news-logo-container, .Get-in-touch .Get-in-touch-header {
+.flex-container, .container, .products, .products .product-image-with-hover .product-image-actions, .products .product-image-with-hover .product-button, .products .product-title-and-price, .products .product-title-and-price .product-name, .products .product-title-and-price .product-price, header, header .container, .new-collection .new-collection-header, .featured .featured-header, .featured .choose, .featured .choose .choose-button, .featured .featured-products, .featured .featured-products .product-image-with-hover .product-image-actions, .featured .featured-products .product-image-with-hover .product-button, .featured .featured-products .product-title-and-price, .featured .featured-products .product-title-and-price .product-name, .featured .featured-products .product-title-and-price .product-price, .Best-sellers .Best-sellers-header, .End-season, .Customer-review-header, .Customer-review .Customer-review-photo-text, .Customer-review .Customer-review-photo-text .photo-collection, .Newsletter, .Newsletter .Newsletter-header, .Newsletter .mail-and-button, .Our-partner .Our-partner-header, .Our-partner .Our-partner-logo-container, .Latest-news .Latest-news-header, .Latest-news .Latest-news-logo-main-container, .Latest-news .Latest-news-logo-main-container .Latest-news-logo-container, .Get-in-touch .Get-in-touch-header, .Get-in-touch .Get-in-touch-container, .Get-in-touch .Get-in-touch-container .Get-in-touch-left, .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container {
   display: flex;
   align-items: center; }
 
-.column-container, .featured .featured-header, .featured .choose .choose-button, .Best-sellers .Best-sellers-header, .Customer-review-header, .Customer-review .Customer-review-photo-text, .Newsletter, .Newsletter .Newsletter-header, .Our-partner .Our-partner-header, .Latest-news .Latest-news-header, .Latest-news .Latest-news-logo-main-container .Latest-news-logo-container, .Get-in-touch .Get-in-touch-header {
+.column-container, .new-collection .new-collection-header, .featured .featured-header, .featured .choose .choose-button, .Best-sellers .Best-sellers-header, .Customer-review-header, .Customer-review .Customer-review-photo-text, .Newsletter, .Newsletter .Newsletter-header, .Our-partner .Our-partner-header, .Latest-news .Latest-news-header, .Latest-news .Latest-news-logo-main-container .Latest-news-logo-container, .Get-in-touch .Get-in-touch-header, .Get-in-touch .Get-in-touch-container .Get-in-touch-left {
   flex-direction: column; }
 
 .container {
@@ -30,21 +30,20 @@ h2 {
 header {
   height: 45px; }
 
-.products, .new-collection {
+.products {
   justify-content: space-between;
-  width: 100%;
-  padding: 0 10px;
-  flex-wrap: wrap; }
-  .products .product-item, .new-collection .product-item {
+  width: 1028px;
+  margin: 0 auto; }
+  .products .product-item {
     width: 236px; }
-  .products .product-image-with-hover, .new-collection .product-image-with-hover {
+  .products .product-image-with-hover {
     position: relative;
     height: 262px; }
-    .products .product-image-with-hover .product-image, .new-collection .product-image-with-hover .product-image {
+    .products .product-image-with-hover .product-image {
       width: 100%;
       height: 100%;
       background-color: white; }
-    .products .product-image-with-hover .product-image-actions, .new-collection .product-image-with-hover .product-image-actions {
+    .products .product-image-with-hover .product-image-actions {
       position: absolute;
       top: 10px;
       bottom: 10px;
@@ -53,25 +52,25 @@ header {
       justify-content: center;
       flex-wrap: wrap;
       align-content: center; }
-    .products .product-image-with-hover .product-button, .new-collection .product-image-with-hover .product-button {
+    .products .product-image-with-hover .product-button {
       justify-content: center;
       width: 50px;
       height: 50px;
       margin: 2px; }
-      .products .product-image-with-hover .product-button.wide, .new-collection .product-image-with-hover .product-button.wide {
+      .products .product-image-with-hover .product-button.wide {
         width: 156px;
         color: white; }
-      .products .product-image-with-hover .product-button .add-to-cart, .new-collection .product-image-with-hover .product-button .add-to-cart {
+      .products .product-image-with-hover .product-button .add-to-cart {
         margin-left: 15px; }
-  .products .product-title-and-price, .new-collection .product-title-and-price {
+  .products .product-title-and-price {
     height: 36px; }
-    .products .product-title-and-price .product-name, .new-collection .product-title-and-price .product-name {
+    .products .product-title-and-price .product-name {
       align-items: center;
       width: 186px;
       height: 36px; }
-      .products .product-title-and-price .product-name span, .new-collection .product-title-and-price .product-name span {
+      .products .product-title-and-price .product-name span {
         padding-left: 12px; }
-    .products .product-title-and-price .product-price, .new-collection .product-title-and-price .product-price {
+    .products .product-title-and-price .product-price {
       align-items: center;
       justify-content: center;
       width: 50px;
@@ -91,10 +90,99 @@ header .container {
       margin-left: 0; }
 
 .navigation {
+  display: flex;
+  align-items: center;
   height: 83px; }
+  .navigation .navigation-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1034px;
+    margin: 0 auto;
+    align-items: center; }
+    .navigation .navigation-content .mart {
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold; }
+      .navigation .navigation-content .mart span {
+        color: #1abc9c; }
+    .navigation .navigation-content nav {
+      display: flex;
+      width: 434px;
+      justify-content: space-between;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+      margin-left: 53px; }
+      .navigation .navigation-content nav a {
+        color: #333333; }
+      .navigation .navigation-content nav a:hover {
+        color: #1abc9c; }
+    .navigation .navigation-content .search-cart {
+      display: flex;
+      justify-content: flex-start;
+      text-transform: uppercase;
+      width: 127px; }
+      .navigation .navigation-content .search-cart i:first-child {
+        padding-right: 7px; }
+    .navigation .navigation-content .search-cart-goods-count {
+      position: relative;
+      border: 1px solid;
+      margin-left: 7px;
+      width: 19px; }
+      .navigation .navigation-content .search-cart-goods-count i {
+        padding-right: 7px;
+        height: 18px;
+        position: absolute; }
+      .navigation .navigation-content .search-cart-goods-count span {
+        position: absolute;
+        color: #1abc9c;
+        margin-left: 4px;
+        font-size: 13px; }
+      .navigation .navigation-content .search-cart-goods-count .count {
+        position: absolute; }
 
-.carousel {
-  height: 554px; }
+#carousel-with-margin {
+  height: 554px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #carousel-with-margin .carousel-button {
+    width: 100px;
+    height: 50; }
+  #carousel-with-margin .frame {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    #carousel-with-margin .frame .carousel-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat; }
+    #carousel-with-margin .frame .first {
+      background-color: red; }
+    #carousel-with-margin .frame .second {
+      background-color: orange; }
+    #carousel-with-margin .frame .third {
+      background-color: yellow; }
+    #carousel-with-margin .frame .fourth {
+      background-color: green; }
+    #carousel-with-margin .frame .fifth {
+      background-color: skyblue; }
+    #carousel-with-margin .frame .sixth {
+      background-color: blue; }
+    #carousel-with-margin .frame .seventh {
+      background-color: purple; }
+  #carousel-with-margin .carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #carousel-with-margin .carousel-text button {
+      background-color: transparent;
+      width: 100px;
+      height: 50px;
+      color: white; }
 
 .advantages {
   padding-top: 90px;
@@ -109,7 +197,7 @@ header .container {
 
 .green-stripes {
   width: 152px;
-  margin: 16px 0 72px 0; }
+  margin: 16px 0 0 0; }
   .green-stripes .stripe {
     width: 100%;
     height: 6px;
@@ -119,8 +207,17 @@ header .container {
       margin: 0; }
 
 .new-collection {
-  height: 622px;
-  padding: 84px 0; }
+  height: 622px; }
+  .new-collection .new-collection-header {
+    justify-content: space-between;
+    width: 100%;
+    padding: 49px 0 71px 0; }
+    .new-collection .new-collection-header h2 {
+      color: #434b53;
+      text-transform: uppercase;
+      font-size: 42px;
+      letter-spacing: -2px;
+      margin: 35px 0 0 0; }
 
 .featured-green-stripes {
   width: 152px;
@@ -136,22 +233,24 @@ header .container {
 .featured {
   height: 1080px;
   padding: 0;
-  border: 1px solid; }
+  padding-top: 53px; }
   .featured .featured-header {
     width: 100%;
     height: 218px;
-    margin: 53px 0 97px 0; }
+    margin-bottom: 84px; }
     .featured .featured-header h2 {
       margin: 35px 0 18px 0; }
   .featured .choose {
-    justify-content: center;
-    width: 100%;
-    height: 60px; }
+    justify-content: space-between;
+    width: 530px;
+    height: 60px;
+    margin: 0 auto;
+    padding-left: 34px; }
     .featured .choose .choose-button {
       justify-content: flex-end;
-      height: 60px;
-      margin: 0 10px 0 10px; }
+      height: 60px; }
       .featured .choose .choose-button .counter {
+        position: relative;
         width: 36px;
         height: 36px;
         border: 1px solid #333333;
@@ -160,6 +259,14 @@ header .container {
         flex-shrink: 0;
         align-self: flex-end;
         transform: translateX(8px); }
+        .featured .choose .choose-button .counter .digit {
+          position: absolute;
+          color: #1abc9c;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: bold;
+          font-size: 18px; }
       .featured .choose .choose-button .button {
         transform: translateY(-3px);
         border: 1px solid;
@@ -176,15 +283,11 @@ header .container {
         .featured .choose .choose-button .button:hover {
           background-color: #1abc9c; }
   .featured .featured-products {
-    height: 640px;
+    height: 645px;
     margin: 0 auto;
-    align-items: baseline;
     justify-content: space-between;
     width: 1030px;
-    padding: 0;
     flex-wrap: wrap; }
-    .featured .featured-products:first-child {
-      margin-bottom: 27px; }
     .featured .featured-products .product-item {
       width: 236px; }
     .featured .featured-products .product-image-with-hover {
@@ -229,12 +332,14 @@ header .container {
 
 .Best-sellers {
   height: 622px; }
-  .Best-sellers .Best-sellers-header h2 {
-    margin: 85px 0 1px 0; }
-  .Best-sellers .Best-sellers-header .Best-sellers-green-stripes {
-    width: 152px;
-    margin: 16px 0 72px 0; }
-  .Best-sellers .products, .Best-sellers .new-collection {
+  .Best-sellers .Best-sellers-header {
+    margin-bottom: 15px; }
+    .Best-sellers .Best-sellers-header h2 {
+      margin: 85px 0 1px 0; }
+    .Best-sellers .Best-sellers-header .Best-sellers-green-stripes {
+      width: 152px;
+      margin: 16px 0 72px 0; }
+  .Best-sellers .products {
     margin: 0 auto;
     justify-content: space-between;
     width: 1054px;
@@ -242,8 +347,23 @@ header .container {
     flex-wrap: wrap; }
 
 .End-season {
-  background-color: #1abc9c;
-  height: 370px; }
+  align-items: center;
+  height: 370px;
+  color: white; }
+  .End-season .End-season-text {
+    margin: 0 auto;
+    width: 595px;
+    height: 139px;
+    text-align: center;
+    padding-top: 28px; }
+    .End-season .End-season-text .first-text {
+      font-weight: bold;
+      font-size: 55px;
+      text-transform: uppercase;
+      line-height: 63px; }
+    .End-season .End-season-text .second-text {
+      font-size: 31px;
+      line-height: 49px; }
 
 .Customer-review-header {
   text-align: center; }
@@ -264,7 +384,7 @@ header .container {
   height: 769px; }
   .Customer-review .Customer-review-photo-text {
     justify-content: flex-start;
-    margin-top: 76px;
+    margin-top: 77px;
     height: 452px; }
     .Customer-review .Customer-review-photo-text .main-photo {
       border-radius: 50%;
@@ -274,9 +394,15 @@ header .container {
     .Customer-review .Customer-review-photo-text .customer-description {
       height: 90px;
       width: 770px;
-      margin-top: 27px;
+      margin-top: 22px;
       line-height: 23px;
       font-size: 13px; }
+    .Customer-review .Customer-review-photo-text .customer-name {
+      text-align: center; }
+      .Customer-review .Customer-review-photo-text .customer-name .customer-name-name {
+        color: #1abc9c; }
+      .Customer-review .Customer-review-photo-text .customer-name .customer-name-city {
+        font-size: 13px; }
     .Customer-review .Customer-review-photo-text .photo-collection {
       justify-content: space-between;
       margin-top: 24px; }
@@ -312,11 +438,13 @@ header .container {
         .Newsletter .Newsletter-header .Newsletter-green-stripes .stripe.thin-stripe {
           height: 2px;
           margin: 0; }
-    .Newsletter .Newsletter-header .Newsletter-text {
-      color: white;
-      margin-top: 2px;
-      font-size: 14.5px;
-      letter-spacing: -1px; }
+  .Newsletter .Newsletter-text {
+    color: white;
+    margin-top: 2px;
+    font-size: 14.5px;
+    width: 271px;
+    letter-spacing: -0.4px;
+    text-align: start; }
   .Newsletter .mail-and-button {
     height: 56px;
     justify-content: center;
@@ -336,11 +464,13 @@ header .container {
     .Newsletter .mail-and-button .button-of-mail {
       color: white;
       position: relative;
-      height: 52px;
+      height: 56px;
       border: 3px solid white;
-      border-radius: 0 4px 4px 0;
+      border-radius: 0 6px 6px 0;
       width: 150px;
-      background-color: #1abc9c; }
+      background-color: #1abc9c;
+      outline: 0;
+      outline-offset: 0; }
 
 .Our-partner {
   text-align: center;
@@ -404,7 +534,8 @@ header .container {
     .Latest-news .Latest-news-logo-main-container .Latest-news-logo-container {
       text-align: center;
       width: 326px;
-      height: 463px; }
+      height: 463px;
+      color: #333333; }
     .Latest-news .Latest-news-logo-main-container .Latest-news-pic {
       width: 323px;
       height: 245px; }
@@ -439,25 +570,107 @@ header .container {
       color: white; }
 
 .Get-in-touch {
-  height: 664px; }
+  height: 664px;
+  background-color: #333333; }
   .Get-in-touch .Get-in-touch-header {
     text-align: center;
     width: 100%;
-    margin-bottom: 98px; }
+    margin-bottom: 60px; }
     .Get-in-touch .Get-in-touch-header h2 {
       margin: 84px 11px 0 0;
-      letter-spacing: -1.1; }
-    .Get-in-touch .Get-in-touch-header .Get-in-touch-stripes {
+      letter-spacing: -1.1;
+      color: white; }
+    .Get-in-touch .Get-in-touch-header .Get-in-touch-green-stripes {
       width: 152px;
-      margin: 0 0 24px 0; }
-      .Get-in-touch .Get-in-touch-header .Get-in-touch-stripes .stripe {
+      margin: 18px 0 6px 0; }
+      .Get-in-touch .Get-in-touch-header .Get-in-touch-green-stripes .stripe {
         width: 100%;
         height: 6px;
         margin: 2px 0;
         background-color: #1abc9c; }
-        .Get-in-touch .Get-in-touch-header .Get-in-touch-stripes .stripe.thin-stripe {
+        .Get-in-touch .Get-in-touch-header .Get-in-touch-green-stripes .stripe.thin-stripe {
           height: 2px;
           margin: 0; }
+  .Get-in-touch .Get-in-touch-container {
+    margin: 0 auto;
+    width: 1034px;
+    height: 344px;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    .Get-in-touch .Get-in-touch-container .Get-in-touch-left {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 510px;
+      height: 344px;
+      color: white; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-left .dokan {
+        font-size: 58px; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-left .dokan .dokan-green {
+          color: #1abc9c; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-left .meet-you {
+        letter-spacing: -0.4px; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-left .text {
+        font-size: 13px;
+        height: 60px;
+        line-height: 22px;
+        margin: -7px 0 17px 0; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-left .ofice-phone-mail {
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 12px; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-left .ofice-phone-mail .green {
+          color: #1abc9c; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container {
+        justify-content: space-between;
+        height: 29px;
+        width: 215px;
+        margin-top: 3px; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon {
+          position: relative;
+          width: 29px;
+          height: 29px;
+          border: 1px solid;
+          text-align: center; }
+          .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon i {
+            position: absolute; }
+    .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt {
+      width: 510px;
+      height: 344px;
+      padding: 7px 5px 5px 5px; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text] {
+        width: 235px;
+        height: 47px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 2px;
+        padding-left: 17px; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text]::-webkit-input-placeholder {
+          color: white; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text]:nth-child(odd) {
+          margin: 0 24px 27px 0; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt .Get-in-touch-text {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        height: 111px;
+        width: 499px;
+        border-radius: 3px;
+        background-color: transparent;
+        padding: 12px 16px;
+        resize: none; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt .Get-in-touch-text::-webkit-input-placeholder {
+          color: white; }
+      .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt button {
+        width: 140px;
+        height: 46px;
+        border: none;
+        outline: none;
+        outline-offset: unset;
+        margin-top: 28px;
+        background-color: #1abc9c;
+        text-transform: uppercase;
+        color: white; }
 
 header {
   background-color: #1abc9c; }
@@ -479,9 +692,6 @@ header {
 
 .stripe {
   background-color: #1abc9c; }
-
-.new-collection {
-  background-color: aliceblue; }
 
 .product-item .product-image-actions {
   opacity: 0;
