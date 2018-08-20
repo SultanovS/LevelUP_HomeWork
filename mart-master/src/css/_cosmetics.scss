@@ -5,11 +5,51 @@ header {
         color: white;
     }
 }
+
+.navigation .navigation-content {
+    .mart span {
+    color: $primary-color;
+    }
+    nav {
+        a {
+            color: $third-color;
+        }
+        a:hover {
+            color: $primary-color;
+        }
+    }
+    .search-cart-goods-count {
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+#carousel-with-margin {
+    .frame {
+        .first   { background-color: red;     }
+        .second  { background-color: orange;  }
+        .third   { background-color: yellow;  }
+        .fourth  { background-color: green;   }
+        .fifth   { background-color: skyblue; }
+        .sixth   { background-color: blue;    }
+        .seventh { background-color: purple; }
+    }
+    .carousel-text button {
+        color: white;
+    }
+}
+
 .advantages {
+    color: $secondary-color;
     .advantage {
         &:hover {
+            
             .advantage-icon, .advantage-title {
                 color: $primary-color;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         .advantage-icon {
@@ -24,11 +64,41 @@ header {
         }
     }
 }
+
 .stripe {
     background-color: $primary-color;
 }
-.new-collection {
-    
+
+.new-collection .new-collection-header h2 {
+    color: $third-color;
+}
+
+.featured {
+    .choose .choose-button {
+        .counter {
+            border: 1px solid $third-color;
+            border-radius: 50%;
+            color: $primary-color;
+            .digit {
+                color: $primary-color;
+            }
+        }
+        .button {
+            border-radius: 2px;
+            color: $fourth-color;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+    .featured-products .product-image-with-hover {
+        .product-image {
+        background-color: lighten(grey, 50%);
+        }
+        .product-button &.wide {
+            color: white;
+        }
+    }
 }
 .product-item {
     .product-image-actions {
@@ -70,6 +140,37 @@ header {
         background-color: $fourth-color;
     }
 }
-    .fa-clock-o::before {
-        content: "\f017";
+.fa-clock-o::before {
+    content: "\f017";
+}
+.End-season {
+    color: white;
+}
+
+.Customer-review .Customer-review-photo-text {
+    .main-photo {
+        background-color: cadetblue;
     }
+    .customer-name .customer-name-name {
+        color: $primary-color;
+    }
+}
+
+.Newsletter {
+    .Newsletter-header .Newsletter-green-stripes .stripe {
+        background-color: white;
+    }
+    .Newsletter-text {
+        color: white;
+    }
+    .mail-and-button {
+        .Newsletter-mail {
+        background-color: white;
+        }
+        .button-of-mail {
+            color: white;
+            border: 3px solid white;
+            background-color: $primary-color;
+        }
+    }    
+}

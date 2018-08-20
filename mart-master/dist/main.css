@@ -103,8 +103,6 @@ header .container {
       font-size: 25px;
       text-transform: uppercase;
       font-weight: bold; }
-      .navigation .navigation-content .mart span {
-        color: #1abc9c; }
     .navigation .navigation-content nav {
       display: flex;
       width: 434px;
@@ -114,10 +112,6 @@ header .container {
       letter-spacing: 1px;
       font-weight: 800;
       margin-left: 53px; }
-      .navigation .navigation-content nav a {
-        color: #333333; }
-      .navigation .navigation-content nav a:hover {
-        color: #1abc9c; }
     .navigation .navigation-content .search-cart {
       display: flex;
       justify-content: flex-start;
@@ -136,7 +130,6 @@ header .container {
         position: absolute; }
       .navigation .navigation-content .search-cart-goods-count span {
         position: absolute;
-        color: #1abc9c;
         margin-left: 4px;
         font-size: 13px; }
       .navigation .navigation-content .search-cart-goods-count .count {
@@ -160,20 +153,6 @@ header .container {
       width: 100%;
       height: 100%;
       background-repeat: no-repeat; }
-    #carousel-with-margin .frame .first {
-      background-color: red; }
-    #carousel-with-margin .frame .second {
-      background-color: orange; }
-    #carousel-with-margin .frame .third {
-      background-color: yellow; }
-    #carousel-with-margin .frame .fourth {
-      background-color: green; }
-    #carousel-with-margin .frame .fifth {
-      background-color: skyblue; }
-    #carousel-with-margin .frame .sixth {
-      background-color: blue; }
-    #carousel-with-margin .frame .seventh {
-      background-color: purple; }
   #carousel-with-margin .carousel-text {
     display: flex;
     flex-direction: column;
@@ -181,13 +160,11 @@ header .container {
     #carousel-with-margin .carousel-text button {
       background-color: transparent;
       width: 100px;
-      height: 50px;
-      color: white; }
+      height: 50px; }
 
 .advantages {
   padding-top: 90px;
-  padding-bottom: 60px;
-  color: #212529; }
+  padding-bottom: 60px; }
   .advantages .advantage {
     text-align: center; }
     .advantages .advantage .advantage-title {
@@ -213,7 +190,6 @@ header .container {
     width: 100%;
     padding: 49px 0 71px 0; }
     .new-collection .new-collection-header h2 {
-      color: #434b53;
       text-transform: uppercase;
       font-size: 42px;
       letter-spacing: -2px;
@@ -253,15 +229,11 @@ header .container {
         position: relative;
         width: 36px;
         height: 36px;
-        border: 1px solid #333333;
-        border-radius: 50%;
-        color: #1abc9c;
         flex-shrink: 0;
         align-self: flex-end;
         transform: translateX(8px); }
         .featured .choose .choose-button .counter .digit {
           position: absolute;
-          color: #1abc9c;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -272,16 +244,15 @@ header .container {
         border: 1px solid;
         min-width: 53px;
         height: 27px;
-        border-radius: 2px;
         background-color: transparent;
         text-transform: uppercase;
         margin: 0;
-        color: gray;
         font-size: 14px;
         text-align: center;
         padding: 4px 6px 4px 6px; }
         .featured .choose .choose-button .button:hover {
-          background-color: #1abc9c; }
+          color: white;
+          cursor: pointer; }
   .featured .featured-products {
     height: 645px;
     margin: 0 auto;
@@ -295,8 +266,7 @@ header .container {
       height: 262px; }
       .featured .featured-products .product-image-with-hover .product-image {
         width: 100%;
-        height: 100%;
-        background-color: white; }
+        height: 100%; }
       .featured .featured-products .product-image-with-hover .product-image-actions {
         position: absolute;
         top: 10px;
@@ -312,8 +282,7 @@ header .container {
         height: 50px;
         margin: 2px; }
         .featured .featured-products .product-image-with-hover .product-button.wide {
-          width: 156px;
-          color: white; }
+          width: 156px; }
         .featured .featured-products .product-image-with-hover .product-button .add-to-cart {
           margin-left: 15px; }
     .featured .featured-products .product-title-and-price {
@@ -348,8 +317,7 @@ header .container {
 
 .End-season {
   align-items: center;
-  height: 370px;
-  color: white; }
+  height: 370px; }
   .End-season .End-season-text {
     margin: 0 auto;
     width: 595px;
@@ -389,8 +357,7 @@ header .container {
     .Customer-review .Customer-review-photo-text .main-photo {
       border-radius: 50%;
       width: 204px;
-      height: 204px;
-      background-color: cadetblue; }
+      height: 204px; }
     .Customer-review .Customer-review-photo-text .customer-description {
       height: 90px;
       width: 770px;
@@ -399,8 +366,6 @@ header .container {
       font-size: 13px; }
     .Customer-review .Customer-review-photo-text .customer-name {
       text-align: center; }
-      .Customer-review .Customer-review-photo-text .customer-name .customer-name-name {
-        color: #1abc9c; }
       .Customer-review .Customer-review-photo-text .customer-name .customer-name-city {
         font-size: 13px; }
     .Customer-review .Customer-review-photo-text .photo-collection {
@@ -418,10 +383,13 @@ header .container {
           margin-right: 20px; }
         .Customer-review .Customer-review-photo-text .photo-collection .customer-photo:last-child {
           margin-left: 15px; }
+        .Customer-review .Customer-review-photo-text .photo-collection .customer-photo:hover {
+          border-color: #1abc9c; }
 
 .Newsletter {
   text-align: center;
-  height: 427px; }
+  height: 427px;
+  background-color: #1abc9c; }
   .Newsletter .Newsletter-header {
     text-align: center;
     width: 100%; }
@@ -433,13 +401,11 @@ header .container {
       .Newsletter .Newsletter-header .Newsletter-green-stripes .stripe {
         width: 100%;
         height: 6px;
-        margin: 2px 0;
-        background-color: white; }
+        margin: 2px 0; }
         .Newsletter .Newsletter-header .Newsletter-green-stripes .stripe.thin-stripe {
           height: 2px;
           margin: 0; }
   .Newsletter .Newsletter-text {
-    color: white;
     margin-top: 2px;
     font-size: 14.5px;
     width: 271px;
@@ -459,18 +425,16 @@ header .container {
       outline-offset: 0;
       place-content: center;
       padding: 25px;
-      border: 0;
-      background-color: white; }
+      border: 0; }
     .Newsletter .mail-and-button .button-of-mail {
-      color: white;
       position: relative;
       height: 56px;
-      border: 3px solid white;
       border-radius: 0 6px 6px 0;
       width: 150px;
-      background-color: #1abc9c;
       outline: 0;
       outline-offset: 0; }
+      .Newsletter .mail-and-button .button-of-mail:hover {
+        cursor: pointer; }
 
 .Our-partner {
   text-align: center;
@@ -568,6 +532,8 @@ header .container {
       border-radius: 4px;
       align-self: flex-start;
       color: white; }
+      .Latest-news .Latest-news-logo-main-container .Latest-news-button:hover {
+        cursor: pointer; }
 
 .Get-in-touch {
   height: 664px;
@@ -617,10 +583,10 @@ header .container {
       .Get-in-touch .Get-in-touch-container .Get-in-touch-left .ofice-phone-mail {
         color: white;
         font-size: 13px;
-        font-weight: bold;
         margin-bottom: 12px; }
         .Get-in-touch .Get-in-touch-container .Get-in-touch-left .ofice-phone-mail .green {
-          color: #1abc9c; }
+          color: #1abc9c;
+          font-weight: bold; }
       .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container {
         justify-content: space-between;
         height: 29px;
@@ -631,14 +597,22 @@ header .container {
           width: 29px;
           height: 29px;
           border: 1px solid;
-          text-align: center; }
+          text-align: center;
+          background-color: transparent;
+          outline: none;
+          outline-offset: none; }
           .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon i {
             position: absolute; }
+          .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon:hover {
+            background-color: #1abc9c;
+            cursor: pointer; }
     .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt {
       width: 510px;
       height: 344px;
       padding: 7px 5px 5px 5px; }
       .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text] {
+        outline: none;
+        outline-offset: none;
         width: 235px;
         height: 47px;
         background-color: transparent;
@@ -650,6 +624,8 @@ header .container {
         .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text]:nth-child(odd) {
           margin: 0 24px 27px 0; }
       .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt .Get-in-touch-text {
+        outline: none;
+        outline-offset: none;
         font-family: inherit;
         font-size: 100%;
         line-height: 1.15;
@@ -671,27 +647,88 @@ header .container {
         background-color: #1abc9c;
         text-transform: uppercase;
         color: white; }
+        .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt button:hover {
+          cursor: pointer; }
 
 header {
   background-color: #1abc9c; }
   header .small-text {
     color: white; }
 
-.advantages .advantage:hover .advantage-icon, .advantages .advantage:hover .advantage-title {
+.navigation .navigation-content .mart span {
   color: #1abc9c; }
 
-.advantages .advantage .advantage-icon {
-  font-size: 60px; }
+.navigation .navigation-content nav a {
+  color: #333333; }
 
-.advantages .advantage .advantage-title {
-  text-transform: uppercase;
-  font-size: 18px; }
+.navigation .navigation-content nav a:hover {
+  color: #1abc9c; }
 
-.advantages .advantage .advantage-text {
-  line-height: 22px; }
+.navigation .navigation-content .search-cart-goods-count span {
+  color: #1abc9c; }
+
+#carousel-with-margin .frame .first {
+  background-color: red; }
+
+#carousel-with-margin .frame .second {
+  background-color: orange; }
+
+#carousel-with-margin .frame .third {
+  background-color: yellow; }
+
+#carousel-with-margin .frame .fourth {
+  background-color: green; }
+
+#carousel-with-margin .frame .fifth {
+  background-color: skyblue; }
+
+#carousel-with-margin .frame .sixth {
+  background-color: blue; }
+
+#carousel-with-margin .frame .seventh {
+  background-color: purple; }
+
+#carousel-with-margin .carousel-text button {
+  color: white; }
+
+.advantages {
+  color: #212529; }
+  .advantages .advantage:hover .advantage-icon, .advantages .advantage:hover .advantage-title {
+    color: #1abc9c; }
+    .advantages .advantage:hover .advantage-icon:hover, .advantages .advantage:hover .advantage-title:hover {
+      cursor: pointer; }
+  .advantages .advantage .advantage-icon {
+    font-size: 60px; }
+  .advantages .advantage .advantage-title {
+    text-transform: uppercase;
+    font-size: 18px; }
+  .advantages .advantage .advantage-text {
+    line-height: 22px; }
 
 .stripe {
   background-color: #1abc9c; }
+
+.new-collection .new-collection-header h2 {
+  color: #333333; }
+
+.featured .choose .choose-button .counter {
+  border: 1px solid #333333;
+  border-radius: 50%;
+  color: #1abc9c; }
+  .featured .choose .choose-button .counter .digit {
+    color: #1abc9c; }
+
+.featured .choose .choose-button .button {
+  border-radius: 2px;
+  color: #8b8b8b; }
+  .featured .choose .choose-button .button:hover {
+    background-color: #1abc9c; }
+
+.featured .featured-products .product-image-with-hover .product-image {
+  background-color: white; }
+
+.product-button .featured .featured-products .product-image-with-hover.wide {
+  color: white; }
 
 .product-item .product-image-actions {
   opacity: 0;
@@ -727,6 +764,29 @@ header {
 
 .fa-clock-o::before {
   content: "\F017"; }
+
+.End-season {
+  color: white; }
+
+.Customer-review .Customer-review-photo-text .main-photo {
+  background-color: cadetblue; }
+
+.Customer-review .Customer-review-photo-text .customer-name .customer-name-name {
+  color: #1abc9c; }
+
+.Newsletter .Newsletter-header .Newsletter-green-stripes .stripe {
+  background-color: white; }
+
+.Newsletter .Newsletter-text {
+  color: white; }
+
+.Newsletter .mail-and-button .Newsletter-mail {
+  background-color: white; }
+
+.Newsletter .mail-and-button .button-of-mail {
+  color: white;
+  border: 3px solid white;
+  background-color: #1abc9c; }
 
 body {
   background-size: 1480px auto;
