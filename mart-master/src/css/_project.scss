@@ -94,28 +94,81 @@ header {
             width: 100px;
             height: 50;
         }
+    
+    .carousel-button-left, .carousel-button-right {
+        width: 80px;
+        height: 80px;  
+        background-color: $primary-color;
+        border: none;
+        outline: none;
+        outline-offset: 0;
+        
+        .fa-chevron-left, .fa-chevron-right {
+            font-size: 38px;
+            color: white;
+        }
+    }
     .frame {
+        z-index: -1;
         position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
         width: 100%;
         height: 100%;
 
         .carousel-image {
-        position: absolute;
+        display: inline-block;
+        flex-shrink: 0;
         width: 100%;
+        // position: absolute;
         height: 100%;
         background-repeat: no-repeat;
+        transition: margin-left 400ms;
         }
  
     }
     .carousel-text {
+        position: absolute;
+        top: 192px;
+        left: 57px;
+        letter-spacing: 2.5px;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
         justify-content: space-between;
+        font-size: 40px;
+        color: white;
+        text-transform: uppercase;
+        width: 90%;
 
-        button {
+        span {
+            white-space: nowrap;
+        }
+
+        .green {
+            color: $primary-color;
+        }
+        .bold {
+            font-weight: bold;
+        }
+
+        .bynow-button {
+            top: 112px;
+            position: absolute;
+            text-transform: uppercase;
             background-color: transparent;
-            width: 100px;
-            height: 50px;
+            width: 112px;
+            height: 40px;
+            font-size: 12px;
+            color:  white;
+            border: 2px solid $primary-color;
+            outline: none;
+            outline-offset: 0;
+            &:hover {
+                background-color: $primary-color;
+            }
+            
         }
     }    
 }
@@ -150,7 +203,7 @@ header {
 }
 
 .new-collection {    
-    
+    background-color: rgb(232,239,255);
     height: 622px;
     .new-collection-header {
         @extend .flex-container;
@@ -184,6 +237,7 @@ header {
 }
 
 .featured {
+    text-align: center;
     height: 1080px;
     padding: 0;
     padding-top: 53px;
@@ -263,6 +317,7 @@ header {
             position: relative;
             height: 262px;
             .product-image {
+                background-color: rgb(232,239,255);
                 width: 100%;
                 height: 100%;
             }
@@ -288,9 +343,12 @@ header {
     
                 &.wide {
                     width: 156px;
+                    outline: none;
+                    outline-offset: 0;
                 }
                 .add-to-cart {
                     margin-left: 15px;
+
                 }
             }
         }
@@ -316,6 +374,11 @@ header {
                 height: 36px;
             }
         }
+    }
+    #Add-more-featured-products{
+        width: 200px;
+        height: 50px;
+
     }
 }
 
@@ -347,6 +410,7 @@ header {
     @extend .flex-container;
     align-items: center;
     height: 370px;
+    background-color: brown;
     
     .End-season-text {
         margin: 0 auto;
@@ -427,13 +491,15 @@ header {
             @extend .flex-container;
             justify-content: space-between;
             margin-top: 24px;
+            .Patrick {background-color: bisque}
+            .Olivia {background-color: cadetblue}
+            .Lee {background-color: sandybrown}
 
             .customer-photo {
                 border-radius: 50%;
                 height: 78px;
                 width: 78px;
                 margin: 0;
-                background-color: transparent;
                 border: 5px solid;
                 padding-right: 5px;
                 &:first-child {
@@ -745,17 +811,15 @@ header {
                 width: 215px;
                 margin-top: 3px;
                 .icon {
-                    position: relative;
                     width: 29px;
                     height: 29px;
                     border: 1px solid;
                     text-align: center;
                     background-color: transparent;
                     outline: none;
-                    outline-offset: none;
-                    i {
-                        position: absolute;
-                    }
+                    outline-offset: 0;
+                    color: white;
+
                     &:hover {
                         background-color: #1abc9c;
                         cursor: pointer;
@@ -767,6 +831,7 @@ header {
             width: 510px;
             height: 344px;
             padding: 7px 5px 5px 5px;
+            
 
             input[type=text] {
                 outline: none;
@@ -777,6 +842,7 @@ header {
                 border: 1px solid white;
                 border-radius: 2px;
                 padding-left: 17px;
+                color: white;
                 &::-webkit-input-placeholder { 
                     color: white;
                 }
@@ -796,6 +862,7 @@ header {
                 background-color: transparent;
                 padding: 12px 16px;
                 resize: none;
+                color: white;
                 &::-webkit-input-placeholder { 
                     color: white;
                 }

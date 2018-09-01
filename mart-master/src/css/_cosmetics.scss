@@ -26,7 +26,8 @@ header {
 }
 
 #carousel-with-margin {
-    .frame {
+    .frame
+     {
         .first   { background-color: red;     }
         .second  { background-color: orange;  }
         .third   { background-color: yellow;  }
@@ -71,6 +72,7 @@ header {
 
 .new-collection .new-collection-header h2 {
     color: $third-color;
+    background-color: rgb(232,239,255);
 }
 
 .featured {
@@ -93,7 +95,8 @@ header {
     }
     .featured-products .product-image-with-hover {
         .product-image {
-        background-color: lighten(grey, 50%);
+            background-color: rgb(232,239,255);
+        // background-color: lighten(grey, 50%);
         }
         .product-button &.wide {
             color: white;

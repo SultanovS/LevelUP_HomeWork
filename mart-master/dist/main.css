@@ -59,7 +59,9 @@ header {
       margin: 2px; }
       .products .product-image-with-hover .product-button.wide {
         width: 156px;
-        color: white; }
+        color: white;
+        outline: none;
+        outline-offset: 0; }
       .products .product-image-with-hover .product-button .add-to-cart {
         margin-left: 15px; }
   .products .product-title-and-price {
@@ -144,23 +146,64 @@ header .container {
   #carousel-with-margin .carousel-button {
     width: 100px;
     height: 50; }
+  #carousel-with-margin .carousel-button-left, #carousel-with-margin .carousel-button-right {
+    width: 80px;
+    height: 80px;
+    background-color: #1abc9c;
+    border: none;
+    outline: none;
+    outline-offset: 0; }
+    #carousel-with-margin .carousel-button-left .fa-chevron-left, #carousel-with-margin .carousel-button-left .fa-chevron-right, #carousel-with-margin .carousel-button-right .fa-chevron-left, #carousel-with-margin .carousel-button-right .fa-chevron-right {
+      font-size: 38px;
+      color: white; }
   #carousel-with-margin .frame {
+    z-index: -1;
     position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
     width: 100%;
     height: 100%; }
     #carousel-with-margin .frame .carousel-image {
-      position: absolute;
+      display: inline-block;
+      flex-shrink: 0;
       width: 100%;
       height: 100%;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      transition: margin-left 400ms; }
   #carousel-with-margin .carousel-text {
+    position: absolute;
+    top: 192px;
+    left: 57px;
+    letter-spacing: 2.5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
-    #carousel-with-margin .carousel-text button {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    width: 90%; }
+    #carousel-with-margin .carousel-text span {
+      white-space: nowrap; }
+    #carousel-with-margin .carousel-text .green {
+      color: #1abc9c; }
+    #carousel-with-margin .carousel-text .bold, #carousel-with-margin .carousel-text h2 {
+      font-weight: bold; }
+    #carousel-with-margin .carousel-text .bynow-button {
+      top: 112px;
+      position: absolute;
+      text-transform: uppercase;
       background-color: transparent;
-      width: 100px;
-      height: 50px; }
+      width: 112px;
+      height: 40px;
+      font-size: 12px;
+      color: white;
+      border: 2px solid #1abc9c;
+      outline: none;
+      outline-offset: 0; }
+      #carousel-with-margin .carousel-text .bynow-button:hover {
+        background-color: #1abc9c; }
 
 .advantages {
   padding-top: 90px;
@@ -184,6 +227,7 @@ header .container {
       margin: 0; }
 
 .new-collection {
+  background-color: #e8efff;
   height: 622px; }
   .new-collection .new-collection-header {
     justify-content: space-between;
@@ -207,6 +251,7 @@ header .container {
       margin: 0; }
 
 .featured {
+  text-align: center;
   height: 1080px;
   padding: 0;
   padding-top: 53px; }
@@ -265,6 +310,7 @@ header .container {
       position: relative;
       height: 262px; }
       .featured .featured-products .product-image-with-hover .product-image {
+        background-color: #e8efff;
         width: 100%;
         height: 100%; }
       .featured .featured-products .product-image-with-hover .product-image-actions {
@@ -282,7 +328,9 @@ header .container {
         height: 50px;
         margin: 2px; }
         .featured .featured-products .product-image-with-hover .product-button.wide {
-          width: 156px; }
+          width: 156px;
+          outline: none;
+          outline-offset: 0; }
         .featured .featured-products .product-image-with-hover .product-button .add-to-cart {
           margin-left: 15px; }
     .featured .featured-products .product-title-and-price {
@@ -298,6 +346,9 @@ header .container {
         justify-content: center;
         width: 50px;
         height: 36px; }
+  .featured #Add-more-featured-products {
+    width: 200px;
+    height: 50px; }
 
 .Best-sellers {
   height: 622px; }
@@ -317,7 +368,8 @@ header .container {
 
 .End-season {
   align-items: center;
-  height: 370px; }
+  height: 370px;
+  background-color: brown; }
   .End-season .End-season-text {
     margin: 0 auto;
     width: 595px;
@@ -371,12 +423,17 @@ header .container {
     .Customer-review .Customer-review-photo-text .photo-collection {
       justify-content: space-between;
       margin-top: 24px; }
+      .Customer-review .Customer-review-photo-text .photo-collection .Patrick {
+        background-color: bisque; }
+      .Customer-review .Customer-review-photo-text .photo-collection .Olivia {
+        background-color: cadetblue; }
+      .Customer-review .Customer-review-photo-text .photo-collection .Lee {
+        background-color: sandybrown; }
       .Customer-review .Customer-review-photo-text .photo-collection .customer-photo {
         border-radius: 50%;
         height: 78px;
         width: 78px;
         margin: 0;
-        background-color: transparent;
         border: 5px solid;
         padding-right: 5px; }
         .Customer-review .Customer-review-photo-text .photo-collection .customer-photo:first-child {
@@ -593,16 +650,14 @@ header .container {
         width: 215px;
         margin-top: 3px; }
         .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon {
-          position: relative;
           width: 29px;
           height: 29px;
           border: 1px solid;
           text-align: center;
           background-color: transparent;
           outline: none;
-          outline-offset: none; }
-          .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon i {
-            position: absolute; }
+          outline-offset: 0;
+          color: white; }
           .Get-in-touch .Get-in-touch-container .Get-in-touch-left .icon-container .icon:hover {
             background-color: #1abc9c;
             cursor: pointer; }
@@ -618,7 +673,8 @@ header .container {
         background-color: transparent;
         border: 1px solid white;
         border-radius: 2px;
-        padding-left: 17px; }
+        padding-left: 17px;
+        color: white; }
         .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text]::-webkit-input-placeholder {
           color: white; }
         .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt input[type=text]:nth-child(odd) {
@@ -634,7 +690,8 @@ header .container {
         border-radius: 3px;
         background-color: transparent;
         padding: 12px 16px;
-        resize: none; }
+        resize: none;
+        color: white; }
         .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt .Get-in-touch-text::-webkit-input-placeholder {
           color: white; }
       .Get-in-touch .Get-in-touch-container .Get-in-touch-rigt button {
@@ -709,7 +766,8 @@ header {
   background-color: #1abc9c; }
 
 .new-collection .new-collection-header h2 {
-  color: #333333; }
+  color: #333333;
+  background-color: #e8efff; }
 
 .featured .choose .choose-button .counter {
   border: 1px solid #333333;
@@ -725,7 +783,7 @@ header {
     background-color: #1abc9c; }
 
 .featured .featured-products .product-image-with-hover .product-image {
-  background-color: white; }
+  background-color: #e8efff; }
 
 .product-button .featured .featured-products .product-image-with-hover.wide {
   color: white; }
