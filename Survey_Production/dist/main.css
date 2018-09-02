@@ -1,0 +1,234 @@
+.header {
+  width: 93.8%;
+  height: 8%;
+  box-sizing: border-box;
+  padding-left: 1.7%;
+  padding-top: 1.7%;
+  margin: 1% 3.4%;
+  position: absolute;
+  color: white;
+  font-size: 2.25em;
+  letter-spacing: 0.03em; }
+
+.main-question {
+  position: absolute;
+  width: 93.9%;
+  height: 68.6%;
+  margin: 8.6% 3.3%;
+  border-radius: 4px;
+  padding: 0 40px 20px 40px;
+  background-color: white; }
+  .main-question .counter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18.9%;
+    height: 9.15%;
+    background-color: #7ecea9;
+    border-radius: 0 0 4px 4px; }
+    .main-question .counter .controls-container {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-size: 1.4em;
+      margin-top: 6%; }
+      .main-question .counter .controls-container .page-og-pages {
+        position: inherit;
+        display: flex;
+        justify-content: center; }
+  .main-question .question-text {
+    width: 36%;
+    height: auto;
+    margin-top: 8.5%;
+    font-size: 1.8em;
+    float: left; }
+  .main-question img {
+    position: absolute;
+    width: 56.8%;
+    height: 48.3%;
+    margin-top: 8.3%;
+    margin-left: 3%;
+    background-color: #7ecea9; }
+  .main-question .button {
+    color: white;
+    position: absolute;
+    width: 44.8%;
+    height: 12.2%;
+    border-radius: 4px;
+    outline: none;
+    outline-offset: 0;
+    background-color: #4e5c65;
+    border: none;
+    text-align: start;
+    padding-left: 2.1%;
+    font-size: 1.7em; }
+    .main-question .button:hover {
+      background-color: #7ecea9; }
+  .main-question .fst-option {
+    bottom: 17.2%;
+    left: 3.5%; }
+  .main-question .snd-option {
+    bottom: 3.2%;
+    left: 3.5%; }
+  .main-question .trd-option {
+    bottom: 17.2%;
+    left: 51.65%; }
+  .main-question .fth-option {
+    bottom: 3.2%;
+    left: 51.65%; }
+
+.main-welcome {
+  width: 85.47%;
+  height: 72.56%;
+  position: absolute;
+  border-radius: 4px;
+  margin: 8.06% 7.34%;
+  background-color: white; }
+  .main-welcome .left, .main-welcome .right {
+    position: absolute;
+    height: 77.12%;
+    top: 8.09%; }
+  .main-welcome .left {
+    left: 7.7%;
+    width: 40.49%;
+    text-align: center; }
+  .main-welcome .right {
+    left: 55.91%;
+    width: 38.39%; }
+  .main-welcome .logo {
+    position: absolute;
+    width: 86px;
+    height: 63px;
+    left: -15px;
+    background-color: #04b184; }
+  .main-welcome .cardplace {
+    position: absolute;
+    width: 100%;
+    height: 62.65%;
+    border-radius: 4px;
+    background-color: #4e5c65;
+    top: 29.7%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
+    .main-welcome .cardplace .cardpic {
+      width: 48.5%;
+      height: 37.5%;
+      border: 5px solid white;
+      position: absolute;
+      top: 19%;
+      left: 24.35%;
+      border-radius: 33px; }
+    .main-welcome .cardplace .cardphoto {
+      width: 40.1%;
+      height: 72.9%;
+      border: 5px solid white;
+      position: absolute;
+      top: 8.3%;
+      left: 5.35%;
+      border-radius: 15px; }
+    .main-welcome .cardplace .cardstripe {
+      width: 35.9%;
+      height: 0.01%;
+      border: 3px solid white;
+      position: absolute;
+      top: 18.3%;
+      left: 56%;
+      border-radius: 2px; }
+    .main-welcome .cardplace .cardtext {
+      color: white;
+      bottom: 24%;
+      left: 9%;
+      position: absolute;
+      font-size: 1.6em;
+      letter-spacing: 0.01em; }
+  .main-welcome .enter {
+    position: absolute;
+    transform: translateX(-50%);
+    outline: none;
+    outline-offset: 0;
+    border: none;
+    width: 58%;
+    height: 11.35%;
+    border-radius: 4px;
+    background-color: #7ecea9;
+    bottom: 0.01%; }
+  .main-welcome h1 {
+    color: #7ecea9;
+    font-size: 4.5em;
+    margin: 0.67em 1%; }
+  .main-welcome h3, .main-welcome hr, .main-welcome .left-text {
+    color: #4e5c65;
+    margin: 0 3%; }
+  .main-welcome h3 {
+    margin-top: 25.5%;
+    margin-bottom: 2%;
+    font-size: 1.5em;
+    letter-spacing: 0.023em; }
+  .main-welcome .left-text {
+    padding: 1.1% 0; }
+
+.podval {
+  position: absolute;
+  margin-left: 3.3%;
+  bottom: 0.5%;
+  width: 93.9%;
+  height: 18.5%; }
+  .podval .comment-area {
+    position: absolute;
+    height: 81%;
+    width: 64%;
+    resize: none;
+    border-radius: 4px;
+    background-color: lightgray;
+    color: #4e5c65;
+    padding-left: 3%;
+    padding-top: 1%; }
+    .podval .comment-area ::-webkit-input-placeholder {
+      color: white; }
+  .podval .podval-button {
+    position: absolute;
+    right: 3.6%;
+    height: 45%;
+    width: 28.9%;
+    border-radius: 4px;
+    outline: none;
+    outline-offset: 0;
+    border: none;
+    background-color: #7ecea9;
+    color: white;
+    text-align: center;
+    font-size: 1.7em; }
+    .podval .podval-button:hover {
+      background-color: #c8eada; }
+  .podval .add {
+    bottom: 1%;
+    left: 19.4%;
+    height: 35%;
+    width: 21.5%; }
+  .podval .skip {
+    bottom: 55%; }
+  .podval .further {
+    bottom: 2%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  box-sizing: border-box;
+  max-width: 1280px;
+  max-height: 1024px;
+  background-size: 1280px auto;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-color: #4e5c65; }
+
+@media screen and (max-width: 930px) {
+  h1 {
+    font-size: 3.5em; }
+  .main .left .cardplace .cardtext {
+    font-size: 1.1em; } }
+
+@media screen and (max-width: 1170px) and (max-height: 840px) {
+  .main .left .cardplace .cardtext {
+    font-size: 1.1em; } }
