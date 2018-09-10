@@ -1,9 +1,9 @@
 #header {
   width: 93.8%;
-  height: 8%;
+  height: 6.5%;
   box-sizing: border-box;
   padding-left: 1.7%;
-  padding-top: 1.7%;
+  padding-top: 0.7%;
   margin: 1% 3.4%;
   position: absolute;
   color: white;
@@ -14,7 +14,7 @@
   position: absolute;
   width: 93.9%;
   height: 68.6%;
-  margin: 8.6% 3.3% 0 3.3%;
+  margin: 7% 3.3% 0 3.3%;
   border-radius: 4px;
   padding: 0 3% 1.5% 3%;
   background-color: white; }
@@ -37,8 +37,6 @@
         display: flex;
         justify-content: center; }
   #main-question #question-text {
-    width: 36%;
-    height: auto;
     margin-top: 8.5%;
     font-size: 1.8em;
     float: left; }
@@ -49,17 +47,38 @@
     margin-top: 8.3%;
     margin-left: 3%;
     background-color: #7ecea9; }
+  #main-question #answer-container.answer-container-4pic {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65%;
+    margin-top: 19%; }
+    #main-question #answer-container.answer-container-4pic .pic-button {
+      color: white;
+      width: 47.8%;
+      height: 47.2%;
+      border-radius: 4px;
+      outline: none;
+      outline-offset: 0;
+      background-color: #4e5c65;
+      border: none;
+      text-align: start;
+      padding-left: 2.1%;
+      font-size: 1.7em; }
+      #main-question #answer-container.answer-container-4pic .pic-button:hover {
+        background-color: #7ecea9; }
   #main-question #answer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: space-between;
     width: 100%;
-    height: 33%;
-    margin-top: 42%; }
+    flex-wrap: wrap; }
     #main-question #answer-container .button {
       color: white;
       width: 47.8%;
-      height: 42.2%;
+      height: 44.2%;
       border-radius: 4px;
       outline: none;
       outline-offset: 0;
@@ -70,18 +89,6 @@
       font-size: 1.7em; }
       #main-question #answer-container .button:hover {
         background-color: #7ecea9; }
-    #main-question #answer-container .fst-option {
-      bottom: 17.2%;
-      left: 3.5%; }
-    #main-question #answer-container .snd-option {
-      bottom: 3.2%;
-      left: 3.5%; }
-    #main-question #answer-container .trd-option {
-      bottom: 17.2%;
-      left: 51.65%; }
-    #main-question #answer-container .fth-option {
-      bottom: 3.2%;
-      left: 51.65%; }
 
 #footer {
   position: absolute;
@@ -107,7 +114,7 @@
   #footer .footer-button {
     position: absolute;
     right: 3%;
-    height: 45%;
+    height: 38%;
     width: 28.9%;
     border-radius: 4px;
     outline: none;
@@ -125,9 +132,39 @@
     height: 35%;
     width: 21.5%; }
   #footer #skip {
-    bottom: 47%; }
+    bottom: 54%; }
   #footer #further {
-    bottom: -7%; }
+    bottom: 5%; }
+
+#main-question .question-text-4pic {
+  width: 100%;
+  height: 15%; }
+
+#main-question .answer-container-4pic {
+  height: 65%;
+  margin-top: 19%; }
+  #main-question .answer-container-4pic .pic-button {
+    color: white;
+    width: 47.8%;
+    height: 47.2%;
+    border-radius: 4px;
+    outline: none;
+    outline-offset: 0;
+    background-color: #4e5c65;
+    border: none;
+    text-align: start;
+    padding-left: 2.1%;
+    font-size: 1.7em; }
+    #main-question .answer-container-4pic .pic-button:hover {
+      background-color: #7ecea9; }
+
+#main-question .question-text-pic-text {
+  width: 36%;
+  height: auto; }
+
+#main-question .answer-container {
+  height: 30%;
+  margin-top: 40%; }
 
 .main-welcome {
   width: 85.47%;
@@ -218,209 +255,15 @@
   .main-welcome .left-text {
     padding: 1.1% 0; }
 
-#header {
-  width: 93.8%;
-  height: 8%;
-  box-sizing: border-box;
-  padding-left: 1.7%;
-  padding-top: 1.7%;
-  margin: 1% 3.4%;
-  position: absolute;
-  color: white;
-  font-size: 2.25em;
-  letter-spacing: 0.03em; }
+#main-question .question-text-text-comment {
+  width: 100%;
+  height: auto;
+  margin-top: 8.5%;
+  font-size: 1.8em; }
 
-#main-question {
-  position: absolute;
-  width: 93.9%;
-  height: 68.6%;
-  margin: 8.6% 3.3% 0 3.3%;
-  border-radius: 4px;
-  padding: 0 3% 1.5% 3%;
-  background-color: white; }
-  #main-question #counter {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 18.9%;
-    height: 9.15%;
-    background-color: #7ecea9;
-    border-radius: 0 0 4px 4px; }
-    #main-question #counter #controls-container {
-      display: flex;
-      justify-content: center;
-      color: white;
-      font-size: 1.4em;
-      margin-top: 6%; }
-      #main-question #counter #controls-container #page-of-pages {
-        position: inherit;
-        display: flex;
-        justify-content: center; }
-  #main-question #question-text {
-    width: 100%;
-    height: auto;
-    margin-top: 8.5%;
-    font-size: 1.8em; }
-  #main-question #answer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 33%;
-    margin-top: 42%; }
-    #main-question #answer-container .button {
-      color: white;
-      width: 47.8%;
-      height: 42.2%;
-      border-radius: 4px;
-      outline: none;
-      outline-offset: 0;
-      background-color: #4e5c65;
-      border: none;
-      text-align: start;
-      padding-left: 2.1%;
-      font-size: 1.7em; }
-      #main-question #answer-container .button:hover {
-        background-color: #7ecea9; }
-
-#footer {
-  position: absolute;
-  padding-top: 1.1%;
-  margin-left: 3.3%;
-  bottom: 0.5%;
-  width: 93.9%;
-  height: 18.5%; }
-  #footer #comment-area {
-    position: absolute;
-    height: 81%;
-    width: 64%;
-    resize: none;
-    border-radius: 4px;
-    background-color: lightgray;
-    color: #4e5c65;
-    padding-left: 3%;
-    padding-top: 1%;
-    outline: none;
-    outline-offset: 0; }
-    #footer #comment-area ::-webkit-input-placeholder {
-      color: white; }
-  #footer .footer-button {
-    position: absolute;
-    right: 3%;
-    height: 45%;
-    width: 28.9%;
-    border-radius: 4px;
-    outline: none;
-    outline-offset: 0;
-    border: none;
-    background-color: #7ecea9;
-    color: white;
-    text-align: center;
-    font-size: 1.7em; }
-    #footer .footer-button:hover {
-      background-color: #c8eada; }
-  #footer #add {
-    bottom: 1%;
-    left: 19.4%;
-    height: 35%;
-    width: 21.5%; }
-  #footer #skip {
-    bottom: 47%; }
-  #footer #further {
-    bottom: -7%; }
-
-#header {
-  width: 93.8%;
-  height: 8%;
-  box-sizing: border-box;
-  padding-left: 1.7%;
-  padding-top: 1.7%;
-  margin: 1% 3.4%;
-  position: absolute;
-  color: white;
-  font-size: 2.25em;
-  letter-spacing: 0.03em; }
-
-#main-question {
-  position: absolute;
-  width: 93.9%;
-  height: 68.6%;
-  margin: 8.6% 3.3% 0 3.3%;
-  border-radius: 4px;
-  padding: 0 3% 1.5% 3%;
-  background-color: white; }
-  #main-question #counter {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 18.9%;
-    height: 9.15%;
-    background-color: #7ecea9;
-    border-radius: 0 0 4px 4px; }
-    #main-question #counter #controls-container {
-      display: flex;
-      justify-content: center;
-      color: white;
-      font-size: 1.4em;
-      margin-top: 6%; }
-      #main-question #counter #controls-container #page-of-pages {
-        position: inherit;
-        display: flex;
-        justify-content: center; }
-  #main-question #question-text {
-    width: 100%;
-    height: 15%;
-    margin-top: 8.5%;
-    font-size: 1.8em; }
-  #main-question #answer-container {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 65%;
-    margin-top: 19%; }
-    #main-question #answer-container .button {
-      color: white;
-      width: 47.8%;
-      height: 47.2%;
-      border-radius: 4px;
-      outline: none;
-      outline-offset: 0;
-      background-color: #4e5c65;
-      border: none;
-      text-align: start;
-      padding-left: 2.1%;
-      font-size: 1.7em; }
-      #main-question #answer-container .button:hover {
-        background-color: #7ecea9; }
-
-#footer {
-  position: absolute;
-  padding-top: 1.1%;
-  margin-left: 3.3%;
-  bottom: 0.5%;
-  width: 93.9%;
-  height: 18.5%; }
-  #footer .footer-button {
-    position: absolute;
-    right: 3%;
-    height: 45%;
-    width: 28.9%;
-    border-radius: 4px;
-    outline: none;
-    outline-offset: 0;
-    border: none;
-    background-color: #7ecea9;
-    color: white;
-    text-align: center;
-    font-size: 1.7em; }
-    #footer .footer-button:hover {
-      background-color: #c8eada; }
-  #footer #skip {
-    bottom: 47%; }
-  #footer #further {
-    bottom: -7%; }
+#main-question .answer-container {
+  height: 30%;
+  margin-top: 40%; }
 
 #header-surveys {
   width: 93.8%;
@@ -495,7 +338,7 @@
         outline-offset: 0;
         border: 1px solid #7ecea9; }
     .list-of-surveys-container #list-of-surveys hr {
-      width: 98%;
+      width: 95%;
       margin-top: 15px; }
 
 * {
@@ -503,9 +346,9 @@
 
 body {
   box-sizing: border-box;
-  max-width: 1280px;
-  max-height: 1024px;
-  background-size: 1280px auto;
+  max-width: 1230px;
+  max-height: 1000px;
+  background-size: 1230px auto;
   background-position-x: center;
   background-repeat: no-repeat;
   width: 100%;

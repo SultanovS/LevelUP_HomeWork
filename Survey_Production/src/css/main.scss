@@ -1,10 +1,10 @@
 @import 'common-colors';
 @import 'variables';
 @import 'base';
+@import '4pic_NOcomment';
 @import 'pic_text_comment';
 @import 'Welcome';
 @import 'text_comment';
-@import '4pic_NOcomment';
 @import 'Available_finished_surveys';
 @import 'project';
 @import 'cosmetics';
@@ -14,9 +14,9 @@
 }
 body {    
     box-sizing: border-box;
-    max-width: 1280px;
-    max-height: 1024px;
-    background-size: 1280px auto;
+    max-width: 1230px;
+    max-height: 1000px;
+    background-size: 1230px auto;
     background-position-x: center;
     background-repeat: no-repeat;
     width: 100%;
