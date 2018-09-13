@@ -11,8 +11,8 @@
 }
 
 .list-of-surveys-container {
- 
-    #finished-surveys.tab {
+  
+    #available-surveys.tab {
     background: linear-gradient(to top, rgb(190, 190, 190),  rgb(224, 224, 224),  rgb(241, 240, 240));
     }   
     #list-of-surveys {
@@ -34,26 +34,22 @@
             flex-wrap: nowrap; 
             align-items: center;
             margin-top: 10px;
-            #survey-name {
+            #finished-survey-name {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start; 
                 align-items: flex-start;
                 width: 46%;
-                #page-of-pages {
-                    display: flex;
-                    justify-content: center;
-                }
             }
-            #survey-status {
+            #finished-survey-status {
                 width: 15%;
                 text-align: center;
             }
-            #survey-till {
+            #finished-survey-till {
                 width: 25%;
                 text-align: center;
             }
-            #survey-go {
+            #finished-survey-state {
                 width: 14%;
                 height: 36px;
                 background-color: $white;

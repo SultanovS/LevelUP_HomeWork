@@ -159,3 +159,26 @@
     }
 }
 
+.list-of-surveys-container {
+    position: absolute;
+    width: 93.9%;
+    height: auto;
+    margin: 8.6% 3.3% 0 3.3%;
+    // padding: 0 3% 1.5% 3%;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    // #available-surveys {
+    // background: linear-gradient(to top, rgb(190, 190, 190),  rgb(224, 224, 224),  rgb(241, 240, 240));
+    .tab {
+        width: 300px;
+        height: 65px;
+        color: $green;
+        text-align: center;
+        padding-top: 25px;
+        background-color: $white;
+        border-radius: 4px 4px 0 0;
+        margin-left: 1.5%;
+        }
+    
+}
